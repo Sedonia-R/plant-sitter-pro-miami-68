@@ -124,5 +124,7 @@ $ pipenv run upgrade
 
 And do a clean install:
 
+```sh
 $ npm ci
 $ pipenv install
+```

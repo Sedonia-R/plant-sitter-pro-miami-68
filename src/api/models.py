@@ -85,6 +85,7 @@ class User(db.Model):
 class PlantSitter(db.Model):
     __tablename__ = 'plant_sitters'
     id = db.Column(db.Integer, primary_key=True)
+    user = db.relationship('User', backref=db.backref('plant_sitters', lazy=True))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     profile_picture_url = db.Column(db.String(255), nullable=True)
     professional_experience = db.Column(db.Text, nullable=True)
@@ -96,8 +97,6 @@ class PlantSitter(db.Model):
     extra_info = db.Column(db.Text, nullable=True)
     created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
-
-    user = db.relationship('User', backref=db.backref('plant_sitters', lazy=True))
 
     def __repr__(self):
         return f'<PlantSitter {self.id}>'
@@ -125,6 +124,8 @@ class JobAssignment(db.Model):
     __tablename__ = 'job_assignments'
 
     id = db.Column(db.Integer, primary_key=True)
+    job_post = db.relationship('JobPost', backref=db.backref('assignments', lazy=True))
+    plantsitter = db.relationship('PlantSitter', backref=db.backref('assignments', lazy=True))
     job_post_id = db.Column(db.Integer, db.ForeignKey('job_post.id'), nullable=False)
     plantsitter_id = db.Column(db.Integer, db.ForeignKey('plant_sitters.id'), nullable=False)
     status = db.Column(db.String(50), default='accepted')  # 'accepted', 'rejected', 'pending'
@@ -133,8 +134,6 @@ class JobAssignment(db.Model):
     client_marked_completed = db.Column(db.Boolean, default=False)
     plantsitter_marked_completed = db.Column(db.Boolean, default=False)
 
-    job_post = db.relationship('JobPost', backref=db.backref('assignments', lazy=True))
-    plantsitter = db.relationship('PlantSitter', backref=db.backref('assignments', lazy=True))
 
     def __repr__(self):
         return f'<JobAssignment {self.id}: Job {self.job_post_id} assigned to Plant Sitter {self.plantsitter_id}>'
@@ -162,6 +161,7 @@ class JobAssignment(db.Model):
 
 class JobPost(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    user = db.relationship('User', backref=db.backref('job_posts', lazy=True))
     start_date = db.Column(db.DateTime, nullable=False)
     end_date = db.Column(db.DateTime, nullable=False)
     address_line_1 = db.Column(db.String(255), nullable=True)
@@ -184,8 +184,6 @@ class JobPost(db.Model):
     status = db.Column(db.String(50), default='open', nullable=False)
     created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
-
-    user = db.relationship('User', backref=db.backref('job_posts', lazy=True))
 
     def __repr__(self):
         return f'<JobPost {self.id} by User {self.user_id}>'

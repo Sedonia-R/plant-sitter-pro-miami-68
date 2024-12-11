@@ -20,7 +20,7 @@ services:
           - key: FLASK_APP_KEY # Imported from Heroku app
             value: "any key works"
           - key: DEBUG
-            value: True
+            value: true
           - key: PYTHON_VERSION
             value: 3.10.6
           - key: DATABASE_URL # Render PostgreSQL database
@@ -34,7 +34,7 @@ services:
           - key: GMAIL_PASSWORD # Added by Sedonia
             sync: false  # Added by Sedonia
           - key: BACKEND_URL # Added by Sedonia
-            value: 'https://bug-free-giggle-wrvq9pg65jrg2v9jg-3001.app.github.dev/' # Added by Sedonia
+            value: https://bug-free-giggle-wrvq9pg65jrg2v9jg-3001.app.github.dev/ # Added by Sedonia
 
 databases: # Render PostgreSQL database
     - name: postgresql-trapezoidal-42170
