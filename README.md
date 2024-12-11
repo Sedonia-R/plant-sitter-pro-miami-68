@@ -79,3 +79,50 @@ This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter
 This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
 
 You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+
+
+
+## Notes about migrations
+
+To repair:
+
+```sh
+$ "ERROR [flask_migrate] Error: Can't locate revision identified by ..."
+```
+
+Run:
+
+```sh
+$ flask db revision --rev-id <revision identifier (i.e. d5f07ca2d890)>
+```
+
+******************
+
+To remove all migrations:
+
+```sh
+$ rm -rf migrations
+$ pipenv run init
+```
+
+And wipe the database:
+
+```sh
+$ psql -h localhost -U gitpod example
+postgres=# \c postgres;
+postgres=# drop database example
+postgres=# create database example
+postgres=# \q
+```
+
+Then run new migration:
+
+```sh
+$ pipenv run migration
+$ pipenv run upgrade
+```
+
+And do a clean install:
+
+$ npm ci
+$ pipenv install
