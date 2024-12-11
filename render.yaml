@@ -28,7 +28,13 @@ services:
                 name: postgresql-trapezoidal-42170
                 property: connectionString
           - key: STRIPE_API_KEY # Added by Sedonia
-              sync: false  # Added by Sedonia
+            sync: false  # Added by Sedonia
+          - key: GMAIL # Added by Sedonia
+            value: "plantsitterpro@gmail.com"
+          - key: GMAIL_PASSWORD # Added by Sedonia
+            sync: false  # Added by Sedonia
+          - key: BACKEND_URL # Added by Sedonia
+            value: 'https://bug-free-giggle-wrvq9pg65jrg2v9jg-3001.app.github.dev/' # Added by Sedonia
 
 databases: # Render PostgreSQL database
     - name: postgresql-trapezoidal-42170
