@@ -9,7 +9,7 @@ databases:
   postgresMajorVersion: "16"
 services:
 - type: web
-  name: sample-service-name
+  name: plant-sitter-pro
   runtime: python
   repo: https://github.com/Sedonia-R/plant-sitter-pro-miami-68
   branch: develop
