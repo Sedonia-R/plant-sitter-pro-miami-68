@@ -30,6 +30,9 @@ export const Navbar = () => {
           onClick={handleLogoClick}
           style={{ cursor: "pointer" }}
         />
+        <div>
+          <h4>Note: Example Site Only</h4>
+        </div>
         <div className="ml-auto">
           <div className="dropdown">
             <button
