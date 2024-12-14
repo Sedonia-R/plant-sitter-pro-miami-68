@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
-import PlantSitterCarousel from "../component/PlantSitterCard";
+// import PlantSitterCarousel from "../component/PlantSitterCard";
 import ServicesCarousel from "../component/ServicesCarousel";
 import { useNavigate } from "react-router-dom";
 import landing2 from "../../img/landing-page2.png";
