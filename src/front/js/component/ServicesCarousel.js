@@ -6,6 +6,7 @@ import repotting from "../../img/HomePageImages/Gemini.Repotting.Home.jpg"
 import pestcontrol from "../../img/HomePageImages/Gemini.PestControl.Service.home.jpg"
 import plantcleaning from "../../img/HomePageImages/Gemini.PlantCleaning.Service.Home.jpg"
 import "../../styles/ServicesCarousel.css"
+import "../../styles/index.css";
 
 
 const services = [
@@ -16,22 +17,22 @@ const services = [
   },
   {
     name: "Re-Potting",
-    image: repotting,  // Replace with the actual path to your image
+    image: repotting,
     link: "/repotting",
   },
   {
     name: "Pruning",
-    image: pruning,  // Replace with the actual path to your image
+    image: pruning,
     link: "/pruning",
   },
   {
     name: "Pest Control",
-    image: pestcontrol,  // Replace with the actual path to your image
+    image: pestcontrol,
     link: "/pestcontrol",
   },
   {
     name: "Plant Cleaning",
-    image: plantcleaning,  // Replace with the actual path to your image
+    image: plantcleaning,
     link: "/plantcleaning",
   },
   {
@@ -66,38 +67,40 @@ const services = [
   },
   {
     name: "Re-Potting",
-    image: repotting,  // Replace with the actual path to your image
+    image: repotting,
     link: "/repotting",
   },
   {
     name: "Pruning",
-    image: pruning,  // Replace with the actual path to your image
+    image: pruning,
     link: "/pruning",
   },
   {
     name: "Pest Control",
-    image: pestcontrol,  // Replace with the actual path to your image
+    image: pestcontrol,
     link: "/pestcontrol",
   },
   {
     name: "Plant Cleaning",
-    image: plantcleaning,  // Replace with the actual path to your image
+    image: plantcleaning,
     link: "/plantcleaning",
   },
 ];
 
 const ServicesCarousel = () => {
   return (
-    <div className="carousel-container">
-      <div className="services-carousel">
-        {services.map((service, index) => (
-          <a key={index} href={service.link} className="service-card">
-            <img src={service.image} alt={service.name} className="card-image" />
-            <div className="card-overlay">
-              <h5 className="service-name">{service.name}</h5>
-            </div>
-          </a>
-        ))}
+    <div className="overflow-container">
+      <div className="carousel-container">
+        <div className="services-carousel">
+          {services.map((service, index) => (
+            <a key={index} href={service.link} className="service-card">
+              <img src={service.image} alt={service.name} className="card-image" />
+              <div className="card-overlay">
+                <h5 className="service-name">{service.name}</h5>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

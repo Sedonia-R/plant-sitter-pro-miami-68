@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import "../../styles/handleSubmit.css"
+import "../../styles/index.css";
 
 export const Login = () => {
   const { actions } = useContext(Context);

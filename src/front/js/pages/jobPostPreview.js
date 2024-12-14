@@ -19,6 +19,7 @@ import outdoors from "../../img/outdoors.jpg";
 import veggies from "../../img/veggies.jpg";
 import { JobDates } from "../component/JobDates";
 import ShovelAnimation from "../component/ShovelAnimation";
+import "../../styles/index.css";
 
 
 export const JobPost2 = () => {

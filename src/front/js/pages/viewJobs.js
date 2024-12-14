@@ -4,6 +4,7 @@ import "../../styles/home.css";
 import noImage from "../../img/noImage.png";
 import clientSignUp from "../../img/client-sign-up.png";
 import { useNavigate } from "react-router-dom";
+import "../../styles/index.css";
 
 export const ViewJobs = () => {
     const { store } = useContext(Context);

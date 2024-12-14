@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
+import "../../styles/index.css";
 
 import { Context } from "../store/appContext";
 

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import PlantSitterCard from "./PlantSitterCard";
 import "../../styles/PlantSitterCarousel.css";
+import "../../styles/index.css";
+
 
 const PlantSitterCarousel = () => {
   const [sitters, setSitters] = useState([]);

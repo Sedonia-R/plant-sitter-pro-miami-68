@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import "../../styles/enternewpassword.css"
+import "../../styles/index.css";
 
 export const EnterNewPassword = () => {
     const [newPassword, setNewPassword] = useState("");

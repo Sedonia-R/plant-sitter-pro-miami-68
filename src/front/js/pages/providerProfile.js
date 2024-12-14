@@ -12,6 +12,7 @@ import outdoors from "../../img/outdoors.jpg";
 import veggies from "../../img/veggies.jpg";
 import { ServiceCard } from "../component/ServiceCard"
 import BushTrimmingLoader from "../component/BushTrimmingLoader";
+import "../../styles/index.css";
 
 export const ProviderProfile = () => {
     const { store, actions } = useContext(Context);

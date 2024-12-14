@@ -6,6 +6,7 @@ import pruning from "../../img/pruning.png";
 import repotting from "../../img/repotting.png";
 import pestControl from "../../img/pestControl.png";
 import ShovelAnimation from './ShovelAnimation';
+import "../../styles/index.css";
 
 export const JobServices = () => {
     const { store, actions } = useContext(Context);

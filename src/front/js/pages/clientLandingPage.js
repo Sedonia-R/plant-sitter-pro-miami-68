@@ -5,6 +5,7 @@ import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import noImage from "../../img/noImage.png";
 import ScissorsLoader from "../component/ScissorsLoader";
+import "../../styles/index.css";
 
 export const ClientLandingPage = () => {
     const { store, actions } = useContext(Context);

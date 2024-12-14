@@ -1,10 +1,182 @@
-/*
-    home.css: This website contains selectors only used in home.css
+.hero-image {
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+.landing-page {
+  width: 100%;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  width: 60%;
+  height: 100%;
+  color: black;
+  padding-top: 10px;
+}
+
+.hero-container {
+  position: relative;
+  height: 100%;
+}
+
+.hero-header {
+  position: absolute;
+  top:5%;
+  width: 100%;
+}
+
+.lp-headers {
+  font-size: 4vw;
+  margin: 0;
+}
+
+.owner-and-caretaker-container {
+  padding-top: 2%;
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
+  width: 100%;
+}
+
+.get-started {
+  padding: 0 1rem 0 1rem;
+}
+
+.lp-subheader {
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 3vw;
+}
+
+.lp-subtext {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 1.5vw;
+}
+
+.home-button {
+  margin: auto;
+  width: 80%;
+}
+
+.button-text{
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  font-size: 2vw;
+}
+
+.carousel-header {
+  text-align: center;
+  font-size: 3vw;
+}
+
+.for-owners {
+  border-bottom-right-radius: 5rem;
+  border-top-left-radius: 5rem;
+  height: auto;
+}
+
+.owner-text {
+  text-align: left;
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  width: 68%;
+  max-height: 100%;
+  color: black;
+}
+
+.button-container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.row-header {
+  width: 60%;
+  padding: 0 0 0 10px;
+}
+
+.row-button {
+  margin: 0;
+  padding: 0 10px 0 0;
+  width: 30%;
+}
+
+.client-and-sitter-buttons {
+  margin: 0 !important;
+  padding: 5px;
+  width: 100%;
+}
+  
+.for-sitters {
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.icon-with-text {
+  font-size: 3.5vw;
+  margin: 10px 0;
+}
+
+.hand-holding-plant-icon {
+  height: 6vw;
+  padding-bottom: 10px;
+}
+
+.client-and-sitter-headers {
+  margin: 0;
+  font-size: 2vw;
+}
+
+.client-and-sitter-text {
+  margin: 0;
+  font-size: 1.5vw;
+}
+
+.plant-sitters {
+  margin: 20px auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sitter-pics {
+  height: 18vw;
+  width: auto;
+  margin: auto;
+  padding: 0;
+}
+
+.sitter-pics:hover {
+  cursor: pointer;
+}
+
+.sitter-text {
+text-align: right;
+position: absolute;
+top: 10%;
+right: 4%;
+width: 68%;
+max-height: 100%;
+color: black;
+}
+
+/* End Home page CSS */
+
+
+
+
+
 
 .applicant-card {
   border: 3px solid rgb(70, 108, 70);
@@ -60,84 +232,10 @@
   cursor: pointer;
 }
 
-.scrollLink:hover {
-  background-color: rgb(238, 238, 238);
-}
-
-.lp-headers {
-  font-size: 4vw;
-}
-
-.landing-page {
-  width: 100%;
-  padding-right: -25px;
-}
-
-.sitter-pics {
-  height: 250px;
-  width: auto;
-  margin: auto;
-}
-
-/* The hero image */
-.hero-image {
-/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-background-image: url("../img/landing-page.jpg");
-
-/* Set a specific height */
-height: 10%;
-
-/* Position and center the image to scale nicely on all screens */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
-}
-
-/* Place text in the middle of the image */
-.hero-text {
-text-align: left;
-position: absolute;
-top: 10%;
-left: 2%;
-width: 60%;
-max-height: 100%;
-/* transform: translate(-50%, -50%); */
-color: black;
-}
-
-.caretaker-text {
-text-align: right;
-position: absolute;
-top: 5%;
-right: 4%;
-width: 68%;
-max-height: 100%;
-/* transform: translate(-50%, -50%); */
-color: black;
-}
-
-.owner-text {
-text-align: left;
-position: absolute;
-top: 5%;
-left: 4%;
-width: 68%;
-max-height: 100%;
-/* transform: translate(-50%, -50%); */
-color: black;
-}
 
 
-.for-owners {
-border-top-right-radius: 100px;
-border-bottom-left-radius: 100px;
-}
 
-.for-sitters {
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-}
+
 
 .contact-us {
   text-decoration: none !important;
@@ -160,16 +258,6 @@ border-bottom-left-radius: 100px;
   border: none;
 }
 
-.navbar {
-  border-bottom: 2px solid rgb(70, 108, 70);
-}
-
-.navbar-banner {
-  margin-left: 20px;
-  margin-right: 40px;
-  max-width: 100%;
-  /* padding: 5px 100px; */
-}
 
 .works {
   border-top: 2px solid rgb(70, 108, 70);
@@ -307,15 +395,7 @@ border-bottom-left-radius: 100px;
   margin-top: 40px;
 }
 
-.logo {
-    height: 120px;
-}
 
-.diphylleia-regular {
-    font-family: "Diphylleia", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 .title {
     color: rgb(70, 108, 70);
@@ -551,95 +631,95 @@ border-bottom-left-radius: 100px;
 
 /* Customize the label (the container) */
 .checkbx {
-    display: block;
-    position: relative;
-    padding-left: 15px;
-    margin-bottom: 12px;
-    border: 1px solid black;
-    border-radius: 10px;
-    text-align: left;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .checkbx input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    height: 15px;
-    width: 15px;
-    background-color: white;
-    border: 1px solid black;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .checkbx:hover input ~ .checkmark {
-    background-color: white;
-    border: 1px solid black;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .checkbx input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .checkbx input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .checkbx .checkmark:after {
-    left: 4px;
-    top: 0px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-  .imageSmall {
-    height: 150px;
-    width: 150px;
-    border-radius: 25px;
-  }
+/* Hide the browser's default checkbox */
+.checkbx input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
 
-  .bckgrnd{
-    background-color: rgb(70, 108, 70) !important;
-    color: white;
-  }
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border: 1px solid black;
+}
 
-  .topRow {
-    margin-top: 30px;
-  }
+/* On mouse-over, add a grey background color */
+.checkbx:hover input ~ .checkmark {
+  background-color: white;
+  border: 1px solid black;
+}
 
-  .bottomRow {
-    margin-bottom: 30px;
-  }
+/* When the checkbox is checked, add a blue background */
+.checkbx input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbx input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbx .checkmark:after {
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.imageSmall {
+  height: 150px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+.bckgrnd{
+  background-color: rgb(70, 108, 70) !important;
+  color: white;
+}
+
+.topRow {
+  margin-top: 30px;
+}
+
+.bottomRow {
+  margin-bottom: 30px;
+}
 
 .btn{
   background-color: rgb(70, 108, 70);

@@ -1,3 +1,7 @@
+.overflow-container {
+  overflow: hidden;
+}
+
 .carousel-container {
   overflow:visible;
   width: 100%;
@@ -8,7 +12,7 @@
 
 .services-carousel {
   display: flex;
-  gap: 30px; /* Increased gap for spacing between larger cards */
+  gap: 30px;
   animation: scroll 15s linear infinite;
 }
 
@@ -28,7 +32,7 @@
 
 .service-card {
   position: relative;
-  flex: 0 0 350px; /* Increased card size */
+  flex: 0 0 20%; /* Increased card size */
   text-decoration: none;
   transition: transform 0.3s ease, z-index 0.3s ease; /* Transition for the pop-up effect */
 }
@@ -59,7 +63,7 @@
 
 .service-name {
   color: #fff;
-  font-size: 20px; /* Increased font size to match larger cards */
+  font-size: 1rem;
   font-weight: bold;
   margin: 0;
 }

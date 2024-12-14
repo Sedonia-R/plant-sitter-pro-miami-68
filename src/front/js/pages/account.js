@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { Context } from "./../store/appContext";
 import './../../styles/AccountSettings.css';
 import BushTrimmingLoader from "../component/BushTrimmingLoader";
+import "../../styles/index.css";
+
 
 const AccountSettings = () => {
     const { store, actions } = useContext(Context);

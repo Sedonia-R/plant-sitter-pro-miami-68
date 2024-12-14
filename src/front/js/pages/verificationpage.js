@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Context } from '../store/appContext';
 import "../../styles/verify.css"; // Assuming we will add styles here
+import "../../styles/index.css";
 
 export const VerifyEmail = () => {
     const { token } = useParams();

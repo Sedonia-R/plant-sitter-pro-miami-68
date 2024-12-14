@@ -4,6 +4,7 @@ import { Context } from "./../store/appContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import "../../styles/LoginSecurity.css"
+import "../../styles/index.css";
 
 
 const LoginSecurity = () => {

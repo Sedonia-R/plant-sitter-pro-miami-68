@@ -1,3 +1,34 @@
-li {
-    cursor: pointer;
+.navbar {
+  border-bottom: 2px solid rgb(70, 108, 70);
+}
+
+.navbar-banner {
+  margin-left: 20px;
+  margin-right: 40px;
+  max-width: 100%;
+}
+
+.logo {
+  height: 10vh;
+}
+
+.example-only {
+  font-size: 3vw;
+  color: green;
+}
+
+#dropdownMenuButton1 {
+  font-size: 2vw;
+}
+
+.dropdown-item, li {
+    font-size: 2vw;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.scrollLink:hover {
+  background-color: rgb(238, 238, 238);
 }

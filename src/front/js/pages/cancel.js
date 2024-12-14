@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
+import "../../styles/index.css";
 
 export const Cancel = () => {
     const { store, actions } = useContext(Context);

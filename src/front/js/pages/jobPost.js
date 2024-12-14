@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { JobPlants } from "../component/JobPlants";
 import { JobServices } from "../component/JobServices";
 import { JobDates } from "../component/JobDates";
+import "../../styles/index.css";
 
 export const JobPost1 = () => {
     const { store, actions } = useContext(Context);

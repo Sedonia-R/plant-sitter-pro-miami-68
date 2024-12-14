@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import wateringImage from "../../img/HomePageImages/Gemini.Watering.Service.Home.jpg"; // Path to the watering image
 import "../../styles/wateringservice.css";
+import "../../styles/index.css";
 
 const WateringService = () => {
   const navigate = useNavigate();

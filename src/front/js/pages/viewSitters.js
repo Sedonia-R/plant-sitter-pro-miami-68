@@ -4,6 +4,7 @@ import "../../styles/home.css";
 import PlantSitterCard from "../component/PlantSitterCard";
 import clientSignUp from "../../img/client-sign-up.png";
 import { useNavigate } from "react-router-dom";
+import "../../styles/index.css";
 
 export const ViewSitters = () => {
     const { store } = useContext(Context);

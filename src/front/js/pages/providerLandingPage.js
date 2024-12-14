@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import ShovelAnimation from "../component/ShovelAnimation";
+import "../../styles/index.css";
 
 export const ProviderLandingPage = () => {
     const { store, actions } = useContext(Context);

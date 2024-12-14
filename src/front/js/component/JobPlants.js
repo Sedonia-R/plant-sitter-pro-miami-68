@@ -9,6 +9,8 @@ import landscape from "../../img/landscape.jpg";
 import outdoors from "../../img/outdoors.jpg";
 import veggies from "../../img/veggies.jpg";
 import ShovelAnimation from './ShovelAnimation';
+import "../../styles/index.css";
+
 
 export const JobPlants = () => {
     const { store, actions } = useContext(Context);

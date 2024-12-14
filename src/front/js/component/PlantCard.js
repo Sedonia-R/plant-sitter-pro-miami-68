@@ -9,6 +9,8 @@ import landscape from "../../img/landscape.jpg";
 import outdoors from "../../img/outdoors.jpg";
 import veggies from "../../img/veggies.jpg";
 import BushTrimmingLoader from './BushTrimmingLoader';
+import "../../styles/index.css";
+
 
 export const PlantCard = () => {
     const { store, actions } = useContext(Context);

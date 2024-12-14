@@ -6,6 +6,7 @@ import { JobPlants } from "../component/JobPlants";
 import { JobServices } from "../component/JobServices"; 
 import { JobDates } from "../component/JobDates";
 import BushTrimmingLoader from "../component/BushTrimmingLoader";
+import "../../styles/index.css";
 
 export const JobPostUpdate = () => {
     const { store, actions } = useContext(Context);

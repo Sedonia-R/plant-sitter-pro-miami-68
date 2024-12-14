@@ -4,6 +4,7 @@ import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import { PlantCard } from "../component/PlantCard";
 import { ServiceCard } from "../component/ServiceCard";
+import "../../styles/index.css";
 
 export const ProviderProfileCompleted = () => {
     const { store, actions } = useContext(Context);

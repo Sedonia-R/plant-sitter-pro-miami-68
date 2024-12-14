@@ -7,6 +7,8 @@ import pruning from "../../img/pruning.png";
 import repotting from "../../img/repotting.png";
 import pestControl from "../../img/pestControl.png";
 import BushTrimmingLoader from './BushTrimmingLoader';
+import "../../styles/index.css";
+
 
 export const ServiceCard = () => {
     const { store, actions } = useContext(Context);

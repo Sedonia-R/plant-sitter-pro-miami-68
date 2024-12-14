@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import pestControlImage from "../../img/HomePageImages/Gemini.PestControl.Service.home.jpg"; // Path to the pest control image
 import "../../styles/pestcontrolservice.css";
+import "../../styles/index.css";
 
 const PestControlService = () => {
   const navigate = useNavigate();

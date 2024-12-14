@@ -5,6 +5,7 @@ import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import noImage from '../../img/noImage.png';
 import BushTrimmingLoader from "../component/BushTrimmingLoader";
+import "../../styles/index.css";
 
 export const JobPostsList = () => {
     const { store, actions } = useContext(Context);

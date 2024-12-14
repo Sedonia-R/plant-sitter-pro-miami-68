@@ -3,6 +3,7 @@ import { Navigate, useParams } from "react-router-dom"
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
+import "../../styles/index.css";
 
 export const CompletedJobsPage = () => {
     const navigate = useNavigate();

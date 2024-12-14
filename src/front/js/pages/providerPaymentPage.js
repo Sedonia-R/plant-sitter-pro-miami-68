@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import plant from "../../img/plant.png";
+import "../../styles/index.css";
 
 export const ProviderPaymentPage = () => {
 	// const { store, actions } = useContext(Context);

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import repottingImage from "../../img/HomePageImages/Gemini.Repotting.Home.jpg"; // Path to the repotting image
 import "../../styles/repottingservice.css";
+import "../../styles/index.css";
 
 const RepottingService = () => {
   const navigate = useNavigate();

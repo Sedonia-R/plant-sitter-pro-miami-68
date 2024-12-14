@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import border from "../../img/border.png";
 import { useNavigate } from "react-router-dom";
+import "../../styles/index.css";
 
 export const Blog = () => {
 	const { store, actions } = useContext(Context);

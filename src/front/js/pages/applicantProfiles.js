@@ -18,6 +18,7 @@ import landscape from "../../img/landscape.jpg";
 import outdoors from "../../img/outdoors.jpg";
 import veggies from "../../img/veggies.jpg";
 // import { ProviderServices } from "./providerServices";
+import "../../styles/index.css";
 
 export const ApplicantProfiles= () => {
     const { store, actions } = useContext(Context);

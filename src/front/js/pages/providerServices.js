@@ -7,6 +7,7 @@ import pruning from "../../img/pruning.png";
 import repotting from "../../img/repotting.png";
 import pestControl from "../../img/pestControl.png";
 import { useNavigate } from "react-router-dom";
+import "../../styles/index.css";
 
 export const ProviderServices = () => {
     const { store, actions } = useContext(Context);

@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Sedonia from "../../img/Sedonia.jpg";
 import Cesar from "../../img/Cesar.jpg";
 import Gerry from "../../img/gerrypicture.jpg";
+import "../../styles/index.css";
 
 export const ContactUs = () => {
 	const { store, actions } = useContext(Context);

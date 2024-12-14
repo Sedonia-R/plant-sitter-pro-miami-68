@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import plantCleaningImage from "../../img/HomePageImages/Gemini.PlantCleaning.Service.Home.jpg"; // Path to the plant cleaning image
 import "../../styles/plantcleaning.css";
+import "../../styles/index.css";
 
 const PlantCleaningService = () => {
   const navigate = useNavigate();

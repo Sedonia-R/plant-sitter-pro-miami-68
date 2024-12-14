@@ -18,6 +18,7 @@ import repotting from "../../img/repotting.png";
 import pestControl from "../../img/pestControl.png";
 import border from "../../img/border.png";
 import { useNavigate } from "react-router-dom";
+import "../../styles/index.css";
 
 export const ClientServices1 = () => {
     const { store, actions } = useContext(Context);

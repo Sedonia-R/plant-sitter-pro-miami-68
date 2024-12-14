@@ -1,5 +1,7 @@
 import React from "react";
 import profilepic from "../../img/profilePicture.png";
+import "../../styles/index.css";
+
 
 const PlantSitterCard = ({ sitter }) => {
     return (

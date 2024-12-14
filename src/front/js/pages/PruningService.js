@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import pruningImage from "../../img/HomePageImages/Gemini.Pruning.Service.home.jpg"; // Path to the pruning image
 import "../../styles/pruningservice.css";
+import "../../styles/index.css";
 
 const PruningService = () => {
   const navigate = useNavigate();

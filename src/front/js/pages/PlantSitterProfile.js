@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
 import ScissorsLoader from '../component/ScissorsLoader';
+import "../../styles/index.css";
 
 export const PlantSitterProfile = () => {
     const { id } = useParams(); // Get PlantSitter ID from URL

@@ -4,6 +4,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import logo2 from "../../img/Logo2.png";
 import "../../styles/navbar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
+import "../../styles/index.css";
+
 
 export const Navbar = () => {
   const { store, actions } = useContext(Context);
@@ -30,8 +32,8 @@ export const Navbar = () => {
           onClick={handleLogoClick}
           style={{ cursor: "pointer" }}
         />
-        <div>
-          <h4>Note: Example Site Only</h4>
+        <div className="example-only diphylleia-regular">
+          <strong>** Note: Example Site Only **</strong>
         </div>
         <div className="ml-auto">
           <div className="dropdown">
@@ -48,7 +50,7 @@ export const Navbar = () => {
               className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton1"
             >
-              <li>
+              <li className="navbar-dropdown-item">
                 <a className="dropdown-item" href="#" onClick={() => navigate("/")}>
                   Home
                 </a>

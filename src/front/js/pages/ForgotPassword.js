@@ -3,6 +3,7 @@
  import { useNavigate } from "react-router-dom";
  import { Modal } from 'react-bootstrap'; // Make sure to install react-bootstrap
  import "../../styles/forgotpassword.css"; // Link to your CSS file
+ import "../../styles/index.css";
 
  export const ForgotPassword = () => {
  	const { store } = useContext(Context);
