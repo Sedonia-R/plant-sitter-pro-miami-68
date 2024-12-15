@@ -2,9 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
-
 import { Home } from "./pages/home";
-import { ContactUs } from "./pages/contactUs";
+import { ContactUs } from "./pages/ContactUs";
 import { Single } from "./pages/single";
 import { ProviderProfile } from "./pages/providerProfile";
 import { ProviderMapPage } from "./pages/providerMapPage";
@@ -54,6 +53,11 @@ import { ClientServicesUpdate } from "./pages/clientServicesUpdate";
 import { Trimming } from "./pages/ExampleLoading.js";
 import { ProviderPaymentPage } from "./pages/providerPaymentPage.js";
 import { ApplicantProfiles } from "./pages/applicantProfiles.js";
+import {AboutSedonia} from "./pages/Sedonia.js";
+import {AboutCesar} from "./pages/Cesar.js";
+import {AboutGerry} from "./pages/Gerry.js";
+import {AboutOneil} from "./pages/Oneil.js";
+import {AboutShafik} from "./pages/Shafik.js";
 
 //create your first component
 const Layout = () => {
@@ -99,7 +103,6 @@ const Layout = () => {
                         <Route element={<PaymentsPayouts />} path="/payments-payouts" />
                         <Route element={<PlantSitterProfile />} path="/plantsitter/:id" />
                         <Route element={<JobPostsList />} path="/job-posts" />
-                        <Route element={<h1>Not found!</h1>} />
                         <Route element={<AccountVerification />} path="/verification" />
                         <Route element={<ForgotPassword />} path="/forgot-password" />
                         <Route element={<EnterNewPassword />} path="/enternewpassword" />
@@ -113,8 +116,14 @@ const Layout = () => {
                         <Route element={<ProfileSuccessPage />} path="/profile-success-page" />
                         <Route element={<CompletedJobsPage />} path="/completed-jobs-page" />
                         <Route element={<Trimming />} path="/trimming" />
+                        <Route element={<AboutSedonia />} path="/Sedonia" />
+                        <Route element={<AboutCesar />} path="/Cesar" />
+                        <Route element={<AboutGerry />} path="/Gerry" />
+                        <Route element={<AboutOneil />} path="/Oneil" />
+                        <Route element={<AboutShafik />} path="/Shafik" />
                         <Route element={<ProviderPaymentPage />} path="/provider-payment" />
                         <Route element={<ApplicantProfiles />} path="/applicant-profiles/:sitter_id" />
+                        <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Chat />
                     <Footer />

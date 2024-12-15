@@ -246,17 +246,6 @@ color: black;
   color: black !important;
 }
 
-.contactLink {
-  color: black;
-  background-color: white;
-  border: 1px solid black;
-}
-
-.contactLink:hover {
-  background-color: rgb(70, 108, 70);
-  color: white;
-  border: none;
-}
 
 
 .works {
@@ -744,17 +733,7 @@ color: black;
   border: 2px solid dodgerblue;
 } */ 
 
-.contacts {
-  background-color: rgb(70, 108, 70);
-  border-radius: 10px;
-  color: white;
-  margin: 3px;
-}
 
-/* .footer {
-  position: relative;
-  bottom: 0;
-} */
 
 
 /* Text displayed in the center when there's no profile picture */

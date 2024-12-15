@@ -1,0 +1,126 @@
+.contacts-container {
+    width: 95%;
+    min-height: 70vh;
+    margin: auto;
+}
+
+.contact-intro-text {
+    font-size: 2vh;
+    text-align: center;
+}
+
+.four-geeks-link {
+    color: green;
+}
+
+.contacts {
+    width: 19%;
+    height: auto;
+    background-color: rgb(70, 108, 70);
+    border-radius: 10px;
+    color: white;
+    margin: 3px;
+    padding: 10px;
+}
+
+.contact-img {
+    border-radius: 10px;
+    object-fit: cover;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-header {
+    font-size: 2vw;
+}
+
+.contact-text {
+    font-size: 1.5vw;
+    margin: 5px 0;
+}
+
+.contact-icons {
+    font-size: 2.8vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts > hr {
+    margin-top: 0 !important;
+}
+
+.contacts-button {
+    background-color: white;
+    color: green;
+    font-size: 1.5vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 0.6vw;
+}
+
+.contacts-button:hover {
+    background-image: linear-gradient(to top right, white, green, white);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.no-git-img {
+    height: 2.8vw;
+    margin-top: -0.5vh;
+}
+
+.popup-wrap {
+    position: relative;
+}
+.popup-wrap .popup-content {
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: black;
+    padding: .5em;
+    min-width: 10rem;
+    font-size: 1.2vw;
+}
+.popup-wrap:hover .popup-content {
+    cursor: pointer;
+    display: block;
+    color: white;
+}
+
+@media only screen and (max-width: 620px) {  
+    .contacts {
+        width: 80%;
+        margin: 2vh auto;
+    }
+
+    .contact-header {
+        font-size: 6vw;
+    }
+    
+    .contact-text {
+        font-size: 4vw;
+    }
+    
+    .contact-icons {
+        font-size: 8vw;
+    }
+    
+    .no-git-img {
+        height: 8vw;
+    }
+
+    .contacts-button {
+        font-size: 4vw;
+        padding: 1.5vw;
+        margin-bottom: 1vh;
+    }
+
+    .popup-wrap .popup-content {
+        font-size: 2.2vw;
+    }
+}
