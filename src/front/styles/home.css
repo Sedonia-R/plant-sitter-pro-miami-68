@@ -369,17 +369,6 @@ color: black;
   left: 0%;
 }
 
-.blog-header {
-  font-size: 60px;
-}
-
-.article {
-  width: 300px !important;
-  height: auto;
-  background-color: white;
-  border: 1px solid rgb(70, 108, 70);
-  border-radius: 25px;
-}
 
 .steps {
   text-align: left;
@@ -505,10 +494,6 @@ color: black;
   text-wrap: wrap;
 }
 
-.divider {
-  height: 100px;
-  width: auto;
-}
 
 .map {
   height: auto;

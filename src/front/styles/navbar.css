@@ -18,11 +18,11 @@
 }
 
 #dropdownMenuButton1 {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .dropdown-item, li {
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 li:hover {

@@ -24,7 +24,7 @@ import { JobPostUpdate } from "./pages/JobPostUpdate";
 import { SignUp } from "./component/SignUp";
 import { Login } from "./component/login";
 import { ViewJobs } from "./pages/viewJobs";
-import { Blog } from "./pages/blog";
+import { Blog } from "./pages/Blog";
 import AccountSettings from "./pages/account"
 import { PersonalInfo } from "./pages/PersonalInfo"
 import PersonalSecurity from "./pages/loginsecurity"
@@ -115,7 +115,6 @@ const Layout = () => {
                         <Route element={<Trimming />} path="/trimming" />
                         <Route element={<ProviderPaymentPage />} path="/provider-payment" />
                         <Route element={<ApplicantProfiles />} path="/applicant-profiles/:sitter_id" />
-
                     </Routes>
                     <Chat />
                     <Footer />
