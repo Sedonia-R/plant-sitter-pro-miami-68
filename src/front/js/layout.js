@@ -21,7 +21,7 @@ import { JobPost1 } from "./pages/jobPost";
 import { JobPost2 } from "./pages/jobPostPreview";
 import { JobPostUpdate } from "./pages/JobPostUpdate";
 import { SignUp } from "./component/SignUp";
-import { Login } from "./component/login";
+import { Login } from "./pages/Login.js";
 import { ViewJobs } from "./pages/viewJobs";
 import { Blog } from "./pages/Blog";
 import AccountSettings from "./pages/account"

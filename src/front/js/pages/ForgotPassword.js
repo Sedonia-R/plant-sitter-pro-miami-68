@@ -98,7 +98,7 @@
 	}
 
  	return (
- 		<>
+ 		<div className="page-container">
  			<form onSubmit={handleSubmit} className="forgot-password-container">
  				<h2 className="forgot-password-header">{!hasToken ? "Reset Password" : "Change Password"}</h2>
  				{!hasToken ? (
@@ -138,7 +138,12 @@
  				)}
  				{error && <div className="forgot-password-error">{error}</div>}
  				<div style={{ textAlign: 'center' }}>
- 					<button type="submit" className="forgot-password-button" >Submit</button>
+ 					<button
+						type="submit"
+						className="forgot-password-button rounded-pill"
+					>
+						Submit
+					</button>
  				</div>
  			</form>
 
@@ -150,6 +155,6 @@
  					{message}
  				</Modal.Body>
  			</Modal>
-		</>
+		</div>
 	);
  };

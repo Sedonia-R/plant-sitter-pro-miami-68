@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
-import "../../styles/handleSubmit.css"
 import "../../styles/index.css";
+import "../../styles/login.css";
+import "../../styles/handleSubmit.css"
 
 export const Login = () => {
   const { actions } = useContext(Context);
@@ -28,8 +28,8 @@ export const Login = () => {
   };
 
   return (
-    <div className="row justify-content-center" onKeyDown={handleKeyDown}>
-      <div className="col-lg-6 bg-indigo">
+    <div className="row login-container" onKeyDown={handleKeyDown}>
+      <div className="col-6 bg-indigo">
         <h1 className="fw-normal mt-5 diphylleia-regular jobs">
           Log in to your account
         </h1>
@@ -44,7 +44,7 @@ export const Login = () => {
             <input
               type="text"
               id="email"
-              className="form-control form-control-lg"
+              className="form-control"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -59,7 +59,7 @@ export const Login = () => {
             <input
               type="password"
               id="password"
-              className="form-control form-control-lg"
+              className="form-control"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
