@@ -11,7 +11,7 @@
     border: none;
     cursor: pointer;
     padding: 12px 16px;
-    border-radius: 50%;
+    border-radius: 50% !important;
     font-size: 24px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
@@ -71,12 +71,17 @@
     outline: none;
 }
 
-button {
+.button-style {
     border: none;
     background-color: #4CAF50; /* Green button */
     color: white;
     padding: 8px 12px;
-    margin-left: 8px;
     cursor: pointer;
     border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+    .chat-icon {
+        font-size: 18px;
+    }
 }

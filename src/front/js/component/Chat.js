@@ -43,7 +43,7 @@ function Chat() {
 
     return (
         <div className="chat-container">
-            <button className="chat-icon" onClick={toggleChat}>💬</button>
+            <button className="chat-icon button-style" onClick={toggleChat}>💬</button>
             {isOpen && (
                 <div className="chat-box">
                     <div className="messages">
@@ -63,7 +63,14 @@ function Chat() {
                             onKeyDown={handleKeyDown}
                             placeholder="Type a message..."
                         />
-                        <button onClick={() => sendMessage(input)}>Send</button>
+                        <button
+                            className="button-style"
+                            onClick={
+                                () => sendMessage(input)
+                            }
+                        >
+                            Send
+                        </button>
                     </div>
                 </div>
             )}
