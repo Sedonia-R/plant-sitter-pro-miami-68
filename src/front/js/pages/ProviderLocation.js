@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
+import "../../styles/locationPages.css";
 
-export const ProviderMapPage = () => {
+export const ProviderLocation = () => {
     const { store, actions } = useContext(Context);
     const navigate = useNavigate();
     const [zipCode, setZipCode] = useState("");
@@ -16,7 +16,6 @@ export const ProviderMapPage = () => {
             if (res.success) {
                 navigate('/view-jobs');
             } else {
-                // navigate('/view-jobs');
                 alert("No job posts yet in your search area. Try expanding your search.");
             }
         } else {
@@ -25,7 +24,7 @@ export const ProviderMapPage = () => {
     };
 
     return (
-        <div className="text-center m-5">
+        <div className="text-center location-container">
             <h1 className="diphylleia-regular">Where would you like to work?</h1>
             <div className="text-center mb-1">
                 <p>Already have an account? <a href="/login"><u>Log in</u></a> to skip</p>

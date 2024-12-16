@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
-import "../../styles/client-location.css";
+import "../../styles/locationPages.css";
 
 export const ClientLocation = () => {
     const { store, actions } = useContext(Context);
@@ -25,7 +25,7 @@ export const ClientLocation = () => {
     };
 
     return (
-        <div className="text-center client-location-container">
+        <div className="text-center location-container">
             <h1 className="diphylleia-regular">Where are you located?</h1>
             <div className="text-center mb-1">
                 <p>Already have an account? <a href="/login"><u>Log in</u></a> to skip</p>

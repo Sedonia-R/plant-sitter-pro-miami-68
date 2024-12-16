@@ -69,7 +69,7 @@ export const Home = () => {
 									className="btn col-12 rounded-pill home-button"
 									onClick={
 										() => {
-											navigate('/provider-map')
+											navigate('/provider-location')
 										}
 									}
 								>
@@ -147,7 +147,7 @@ export const Home = () => {
 								className="btn col-12 rounded-pill mt-2 client-and-sitter-buttons"
 								onClick={
 									() => {
-										navigate('/provider-map')
+										navigate('/provider-location')
 									}
 								}
 							>
