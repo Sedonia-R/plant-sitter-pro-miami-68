@@ -20,6 +20,7 @@
 
 #dropdownMenuButton1 {
   font-size: 1.5vw;
+  color: white;
 }
 
 .dropdown-item, li {
@@ -35,11 +36,14 @@ li:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .logo {
-    height: 10vh;  }
+  /* .logo {
+    height: 10vh;
+  } */
   
   #dropdownMenuButton1 {
     font-size: 2.5vw;
+    padding: 2px 4px;
+    color: white;
   }
 
   .dropdown-item, li {
