@@ -13,7 +13,7 @@ export const ContactUs = () => {
     const navigate = useNavigate();
     return (
         <div className="h-100">
-            <div className="contacts-container mt-3">
+            <div className="contacts-container">
                 <h1 className="diphylleia-regular mb-4 text-center"><strong>Meet the Developers</strong></h1 >
                 <p className="contact-intro-text">
                     This app was built as a capstone project for the

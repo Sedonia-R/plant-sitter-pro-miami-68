@@ -1,13 +1,11 @@
 .footer-container {
     display: flex;
     justify-content: center;
-    /* position: fixed;
-    bottom: 0;
-    margin-top: 5px; */
+    height: 10vh;
 }
 
 .footer {
-    margin: 3vh 0;
+    margin: auto;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -15,7 +13,7 @@
 }
 
 .contact-link {
-    font-size: 2vh;
+    font-size: 1rem;
     color: black;
     background-color: white;
     border: 1px solid black;
@@ -26,4 +24,10 @@
     background-color: rgb(70, 108, 70);
     color: white;
     border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-link {
+        font-size: 0.8rem;
+    }
 }
