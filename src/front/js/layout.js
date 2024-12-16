@@ -124,7 +124,7 @@ const Layout = () => {
                         <Route element={<ApplicantProfiles />} path="/applicant-profiles/:sitter_id" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
-                    <Chat />
+                    {/* <Chat /> */}
                     <Footer />
                 </ScrollToTop>
             </BrowserRouter>
