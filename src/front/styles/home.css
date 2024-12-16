@@ -113,9 +113,10 @@
 }
 
 .button-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+  margin: 0 1rem;
 }
 
 .row-header {
@@ -124,20 +125,15 @@
 }
 
 .row-button {
-  margin: 0;
-  padding: 0 10px 0 0;
   width: 30%;
+  padding: 0;
+  margin: 0;
 }
 
 .client-and-sitter-buttons {
-  margin: 0 !important;
+  margin: 0;
   padding: 5px;
   width: 100%;
-}
-  
-.for-sitters {
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
 }
 
 .icon-with-text {

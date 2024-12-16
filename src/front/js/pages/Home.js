@@ -91,7 +91,7 @@ export const Home = () => {
 			</div>
 
 			<div className="hero-image">
-				<img className="for-owners-and-sitters" src={forOwners} />
+				<img className="for-owners for-owners-and-sitters" src={forOwners} />
 				<div className="owner-text">
 					<div className="row d-flex button-container">
 						<div className="row-header">
@@ -100,7 +100,7 @@ export const Home = () => {
 						<div className="container row-button">
 							<button
 								type="button"
-								className="btn rounded-pill mt-2 client-and-sitter-buttons"
+								className="btn rounded-pill client-and-sitter-buttons"
 								onClick={
 									() => {
 										actions.clearJobPostId();
@@ -138,11 +138,11 @@ export const Home = () => {
 			<div className="hero-image">
 				<img className="for-owners-and-sitters" src={forSitters} />
 				<div className="sitter-text">
-					<div className="row d-flex button-container">
+					<div className="row button-container">
 						<div className="container col-3 row-button">
 							<button
 								type="button"
-								className="btn col-12 rounded-pill mt-2 client-and-sitter-buttons"
+								className="btn col-12 rounded-pill client-and-sitter-buttons"
 								onClick={
 									() => {
 										navigate('/provider-location')
