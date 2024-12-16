@@ -30,7 +30,12 @@ export const ContactUs = () => {
                         <img 
                             src={Sedonia} 
                             alt="Image of Sedonia" 
-                            className="contact-img" 
+                            className="contact-img"
+                            onClick={
+                                () => {
+                                    navigate('/Sedonia')
+                                }
+                            }
                         />
                         <div className="card-body text-center">
                             <h5 className="card-title diphylleia-regular text-white contact-header">
@@ -55,11 +60,11 @@ export const ContactUs = () => {
                         <button 
                             className="contacts-button"
                             type="button"
-                                onClick={
-                                    () => {
-                                        navigate('/Sedonia')
-                                    }
+                            onClick={
+                                () => {
+                                    navigate('/Sedonia')
                                 }
+                            }
                             >
                             Learn More
                         </button>
@@ -69,7 +74,12 @@ export const ContactUs = () => {
                         <img 
                             src={Cesar} 
                             alt="Image of Cesar" 
-                            className="contact-img" 
+                            className="contact-img"
+                            onClick={
+                                () => {
+                                    navigate('/Cesar')
+                                }
+                            }
                         />
                         <div className="card-body text-center">
                             <h5 className="card-title diphylleia-regular text-white contact-header">
@@ -94,21 +104,26 @@ export const ContactUs = () => {
                         <button 
                             className="contacts-button"
                             type="button"
-                                onClick={
-                                    () => {
-                                        navigate('/Cesar')
-                                    }
+                            onClick={
+                                () => {
+                                    navigate('/Cesar')
                                 }
+                            }
                             >
                             Learn More
                         </button>
                     </div>
                     {/* Gerardo */}
                     <div className="contacts">
-                        <img 
-                            src={Gerry} 
-                            alt="Image of Gerry" 
-                            className="contact-img" 
+                        <img
+                            src={Gerry}
+                            alt="Image of Gerry"
+                            className="contact-img"
+                            onClick={
+                                () => {
+                                    navigate('/Gerry')
+                                }
+                            }
                         />
                         <div className="card-body text-center">
                             <h5 className="card-title diphylleia-regular text-white contact-header">
@@ -133,21 +148,26 @@ export const ContactUs = () => {
                         <button 
                             className="contacts-button"
                             type="button"
-                                onClick={
-                                    () => {
-                                        navigate('/Gerry')
-                                    }
+                            onClick={
+                                () => {
+                                    navigate('/Gerry')
                                 }
+                            }
                             >
                             Learn More
                         </button>
                     </div>
                     {/* Oneil */}
                     <div className="contacts">
-                        <img 
-                            src={Oneil} 
-                            alt="Image of Oneil" 
-                            className="contact-img" 
+                        <img
+                            src={Oneil}
+                            alt="Image of Oneil"
+                            className="contact-img"
+                            onClick={
+                                () => {
+                                    navigate('/Oneil')
+                                }
+                            }
                         />
                         <div className="card-body text-center">
                             <h5 className="card-title diphylleia-regular text-white contact-header">
@@ -172,21 +192,26 @@ export const ContactUs = () => {
                         <button 
                             className="contacts-button"
                             type="button"
-                                onClick={
-                                    () => {
-                                        navigate('/Oneil')
-                                    }
+                            onClick={
+                                () => {
+                                    navigate('/Oneil')
                                 }
+                            }
                             >
                             Learn More
                         </button>
                     </div>
                     {/* Shafik */}
                     <div className="contacts">
-                        <img 
-                            src={Shafik} 
-                            alt="Image of Shafik" 
-                            className="contact-img" 
+                        <img
+                            src={Shafik}
+                            alt="Image of Shafik"
+                            className="contact-img"
+                            onClick={
+                                () => {
+                                    navigate('/Shafik')
+                                }
+                            }
                         />
                         <div className="card-body text-center">
                             <h5 className="card-title diphylleia-regular text-white contact-header">
@@ -213,19 +238,19 @@ export const ContactUs = () => {
                                     </div> 
                                 </div>
                             </div>
+                        </div>
                             <hr/>
                             <button 
                                 className="contacts-button"
                                 type="button"
-                                    onClick={
-                                        () => {
-                                            navigate('/Shafik')
-                                        }
+                                onClick={
+                                    () => {
+                                        navigate('/Shafik')
                                     }
+                                }
                                 >
                                 Learn More
                             </button>
-                        </div>
                     </div>
                 </div>
             </div>

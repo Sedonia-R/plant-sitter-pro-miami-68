@@ -1,12 +1,9 @@
-import React, { useContext } from "react";
-// import border from "../../img/border.png";
-// import { useNavigate } from "react-router-dom";
+import React from "react";
 import Sedonia from "../../img/Sedonia.jpg";
 import "../../styles/index.css";
-import "../../styles/about-contacts.css";
+import "../../styles/aboutContacts.css";
 
 export const AboutSedonia = () => {
-    // const navigate = useNavigate();
 
     return (
         <div className="about-contacts-container">
@@ -29,8 +26,8 @@ export const AboutSedonia = () => {
                 />
                 <div className="about-text">
                     <p>Sedonia is a lifelong scientist and an expert at catching bugs (literally, they're an entomologist)! 
-                    The idea for Plant Sitter Pro came from Sedonia's many years of personal and professional
-                    experience with plant care. Or, more precisely, with her years of experience traveling as a plant owner. 
+                    The idea for Plant Sitter Pro came from her many years of personal and professional
+                    experience with plant care. Or, more precisely, with their years of experience traveling as a plant owner. 
                     Plants can be very picky, and they tend to require more expert care than the average friend, neighbor, or family 
                     member can provide. This leaves most plant owners in a tricky situation when they travel. Enter Plant Sitter Pro!</p>
                     <p><strong>Sedonia's role</strong> in the development of this project was primarily UX/UI, including organizing the 

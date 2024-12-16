@@ -2,7 +2,7 @@ import React from "react";
 // import { useNavigate } from "react-router-dom";
 import Oneil from "../../img/Oneil.jpg";
 import "../../styles/index.css";
-import "../../styles/about-contacts.css";
+import "../../styles/aboutContacts.css";
 
 export const AboutOneil = () => {
     // const navigate = useNavigate();

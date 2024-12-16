@@ -85,12 +85,12 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<div className="diphylleia-regular carousel-header mt-3 mb-2"><strong>Get Help With...</strong></div>
+			<div className="diphylleia-regular carousel-header"><strong>Get Help With...</strong></div>
 			<div className="mt-2 mb-2">
 				<ServicesCarousel />
 			</div>
 
-			<div className="hero-image mt-3">
+			<div className="hero-image">
 				<img className="about-banner for-owners" src={forOwners} />
 				<div className="owner-text">
 					<div className="row d-flex button-container">

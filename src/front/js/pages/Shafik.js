@@ -1,11 +1,9 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
 import Shafik from "../../img/Shafik.png";
 import "../../styles/index.css";
-import "../../styles/about-contacts.css";
+import "../../styles/aboutContacts.css";
 
 export const AboutShafik = () => {
-    // const navigate = useNavigate();
 
     return (
         <div className="about-contacts-container">
