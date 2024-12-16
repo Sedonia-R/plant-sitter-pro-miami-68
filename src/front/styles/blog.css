@@ -1,15 +1,19 @@
 .blog-header {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .divider {
-  height: 5rem;
+  height: 3rem;
   width: auto;
 }
 
 .article {
-  width: 20rem !important;
-  height: 15rem;
+  padding: 20px;
+}
+
+.article-img {
+  width: 15rem !important;
+  height: 10rem;
   border: 1px solid rgb(70, 108, 70);
   border-radius: 25px;
   background-position: center;
@@ -17,18 +21,20 @@
   background-size: cover;
 }
 
+.article-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: black;
+}
+
 @media only screen and (max-width: 600px) {
   .blog-header {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   
   .divider {
-    height: 4rem;
+    height: 2rem;
     width: auto;
   }
 
-  .article {
-    width: 15rem !important;
-    height: 10rem;
-  }
 }

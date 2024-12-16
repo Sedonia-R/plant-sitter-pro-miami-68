@@ -32,7 +32,7 @@ export const Navbar = () => {
           style={{ cursor: "pointer" }}
         />
         <div className="example-only diphylleia-regular">
-          <strong>** Note: Example Site **</strong>
+          <strong>** Example Site **</strong>
         </div>
         <div className="ml-auto">
           <div className="dropdown">

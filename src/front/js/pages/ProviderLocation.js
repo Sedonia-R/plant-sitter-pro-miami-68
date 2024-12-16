@@ -25,12 +25,12 @@ export const ProviderLocation = () => {
 
     return (
         <div className="text-center location-container">
-            <h1 className="diphylleia-regular">Where would you like to work?</h1>
-            <div className="text-center mb-1">
+            <div className="diphylleia-regular location-header">Where would you like to work?</div>
+            <div className="text-center">
                 <p>Already have an account? <a href="/login"><u>Log in</u></a> to skip</p>
             </div>
             <form>
-                <div className="row container address mt-4 w-50">
+                <div className="row container address">
                     <input 
                         placeholder=" ZIP code" 
                         type="text" 
@@ -42,7 +42,7 @@ export const ProviderLocation = () => {
                 </div>
             </form>
             <div className="mt-4">
-                <h3 className="diphylleia-regular"><strong>How far are you willing to travel?</strong></h3>
+                <div className="diphylleia-regular location-header">How far are you willing to travel?</div>
                 <input 
                     placeholder=" Ex: 15" 
                     type="number" 

@@ -1,13 +1,11 @@
 import React from "react";
-import "../../styles/ServicesCarousel.css";
 import pruning from "../../img/HomePageImages/Gemini.Pruning.Service.home.jpg"
 import watering from "../../img/HomePageImages/Gemini.Watering.Service.Home.jpg"
 import repotting from "../../img/HomePageImages/Gemini.Repotting.Home.jpg"
 import pestcontrol from "../../img/HomePageImages/Gemini.PestControl.Service.home.jpg"
 import plantcleaning from "../../img/HomePageImages/Gemini.PlantCleaning.Service.Home.jpg"
-import "../../styles/ServicesCarousel.css"
+import "../../styles/servicesCarousel.css"
 import "../../styles/index.css";
-
 
 const services = [
   {

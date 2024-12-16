@@ -30,7 +30,7 @@ export const Home = () => {
 						</div>
 						
 						<div className="row owner-and-caretaker-container">
-							<div className="col-6 get-started">
+							<div className="get-started owner">
 								<h1
 									className="diphylleia-regular lp-subheader"
 								>
@@ -56,7 +56,7 @@ export const Home = () => {
 									</h3>
 								</button>
 							</div>
-							<div className="col-6 get-started">
+							<div className="get-started provider">
 								<h1 className="diphylleia-regular lp-subheader"
 								>
 									Caretakers
@@ -86,7 +86,7 @@ export const Home = () => {
 			</div>
 
 			<div className="diphylleia-regular carousel-header"><strong>Get Help With...</strong></div>
-			<div className="mt-2 mb-2">
+			<div>
 				<ServicesCarousel />
 			</div>
 

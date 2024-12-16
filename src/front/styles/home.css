@@ -49,6 +49,14 @@
   padding: 0 1rem 0 1rem;
 }
 
+.owner {
+  width: 50%;
+}
+
+.provider {
+  width: 50%;
+}
+
 .lp-subheader {
   margin: 0;
   padding-left: 20px;
@@ -85,8 +93,8 @@
 }
 
 .for-owners {
-  border-bottom-right-radius: 5rem;
-  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
   height: auto;
 }
 
@@ -179,27 +187,47 @@ color: black;
 @media only screen and (max-width: 600px) {
   .hero-container {
     padding-top: 1vh;
+    width: 70%;
   }
 
   .hero-header {
     top:1%;
   }
 
+  .about-banner {
+    margin-top: 1rem;
+  }
+
+  .lp-headers {
+    font-size: 5.5vw;
+  }
+
   .owner-and-caretaker-container {
-    padding-top: 2%;
     bottom: 5%;
+  }
+
+  .owner {
+    width: 45%;
+  }
+
+  .provider {
+    width: 55%;
+  }
+
+  .get-started {
+    padding: 0 0.2rem 0 0.5rem;
   }
 
   .lp-subheader {
     margin: 0;
     padding-left: 5px;
     padding-bottom: 5px;
-    font-size: 3vw;
+    font-size: 5vw;
   }
   
   .lp-subtext {
     padding-bottom: 2px;
-    font-size: 1.5vw;
+    font-size: 2.1vw;
   }
 
   .lp-subtext-last {
@@ -209,6 +237,11 @@ color: black;
   .home-button {
     padding: 4px;
   }
+
+  
+.carousel-header {
+  font-size: 4vw;
+}
 }
 
 

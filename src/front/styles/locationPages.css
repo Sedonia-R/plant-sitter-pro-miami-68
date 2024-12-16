@@ -1,15 +1,23 @@
 .location-container {
-    min-height: 70vh;
-    margin-top: 5vh;
+    min-height: 80vh;
+    padding-top: 5vh;
+}
+
+.location-header {
+    font-size: 6vw;
+    font-weight: bold;
 }
 
 .address {
-    margin: 15px auto;
+    padding: 15px auto;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 4vw;
 }
 
 .input-field {
     width: 300px;
     padding: 10px;
     outline: black;
-    margin: 5px auto;
+    padding: 5px auto;
 }
