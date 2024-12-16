@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
-import { Home } from "./pages/home";
+import { Home } from "./pages/Home.js";
 import { ContactUs } from "./pages/ContactUs";
 import { Single } from "./pages/single";
 import { ProviderProfile } from "./pages/providerProfile";
@@ -10,7 +10,7 @@ import { ProviderLocation } from "./pages/ProviderLocation.js";
 import injectContext from "./store/appContext";
 import { ProviderSignUp } from "./pages/providerSignUp";
 import { Navbar } from "./component/Navbar";
-import { Footer } from "./component/footer";
+import { Footer } from "./component/Footer";
 import { ProviderServices } from "./pages/providerServices";
 import { ProviderProfileCompleted } from "./pages/providerProfileCompleted";
 import { ClientLocation } from "./pages/ClientLocation";
@@ -59,7 +59,6 @@ import {AboutGerry} from "./pages/Gerry.js";
 import {AboutOneil} from "./pages/Oneil.js";
 import {AboutShafik} from "./pages/Shafik.js";
 
-//create your first component
 const Layout = () => {
     const basename = process.env.BASENAME || "";
 

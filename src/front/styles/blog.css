@@ -3,33 +3,32 @@
 }
 
 .divider {
-    height: 5rem;
+  height: 5rem;
+  width: auto;
+}
+
+.article {
+  width: 20rem !important;
+  height: 15rem;
+  border: 1px solid rgb(70, 108, 70);
+  border-radius: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-header {
+    font-size: 3rem;
+  }
+  
+  .divider {
+    height: 4rem;
     width: auto;
   }
 
-.article {
-    width: 20rem !important;
-    height: 15rem;
-    border: 1px solid rgb(70, 108, 70);
-    border-radius: 25px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* position: relative; */
+  .article {
+    width: 15rem !important;
+    height: 10rem;
   }
-
-  @media only screen and (max-width: 600px) {
-    .blog-header {
-        font-size: 3rem;
-    }
-    
-    .divider {
-        height: 4rem;
-        width: auto;
-    }
-
-    .article {
-        width: 15rem !important;
-        height: 10rem;
-    }
-  }
+}

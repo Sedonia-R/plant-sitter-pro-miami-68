@@ -21,9 +21,9 @@ export const Home = () => {
 	return (
 		<>
 			<div className="hero-image">
-				<img className="landing-page" src={landing2} />
-				<div className="hero-text">
-					<div className="hero-container">
+				<img className="about-banner" src={landing2} />
+				<div className="hero-container">
+					<div className="hero-text">
 						<div className="hero-header">
 							<h1 className="diphylleia-regular lp-headers">We connect plant owners</h1>
 							<h1 className="diphylleia-regular lp-headers">with plant caretakers</h1>
@@ -38,10 +38,10 @@ export const Home = () => {
 								</h1>
 								<h4 className="lp-subtext">🌿Going out of town?</h4>
 								<h4 className="lp-subtext">🌿Need help with pests?</h4>
-								<h4 className="lp-subtext pb-2">🌿Love plants, but kill them?</h4>
+								<h4 className="lp-subtext lp-subtext-last">🌿Love plants, but kill them?</h4>
 								<button
 									type="button"
-									className="btn col-12 rounded-pill home-button"
+									className="btn rounded-pill home-button"
 									onClick={
 										() => {
 											actions.clearJobPostId();
@@ -63,10 +63,10 @@ export const Home = () => {
 								</h1>
 								<h4 className="lp-subtext">🌿Looking for work?</h4>
 								<h4 className="lp-subtext">🌿Got a green thumb?</h4>
-								<h4 className="lp-subtext pb-2">🌿Experienced with plant care?</h4>
+								<h4 className="lp-subtext lp-subtext-last">🌿Experienced with plant care?</h4>
 								<button
 									type="button"
-									className="btn col-12 rounded-pill home-button"
+									className="btn rounded-pill home-button"
 									onClick={
 										() => {
 											navigate('/provider-location')
@@ -75,7 +75,6 @@ export const Home = () => {
 								>
 									<h3
 										className="diphylleia-regular button-text"
-										style={{ fontSize: "2vw" }}
 									>
 										<strong>Find Jobs</strong>
 									</h3>
@@ -92,7 +91,7 @@ export const Home = () => {
 			</div>
 
 			<div className="hero-image mt-3">
-				<img className="landing-page for-owners" src={forOwners} />
+				<img className="about-banner for-owners" src={forOwners} />
 				<div className="owner-text">
 					<div className="row d-flex button-container">
 						<div className="row-header">
@@ -111,7 +110,6 @@ export const Home = () => {
 							>
 								<h3
 									className="diphylleia-regular button-text"
-									style={{ fontSize: "2vw" }}
 								>
 									<strong>Browse Now</strong>
 								</h3>
@@ -138,7 +136,7 @@ export const Home = () => {
 			</div>
 
 			<div className="hero-image mt-4">
-				<img className="landing-page" src={howitworks} />
+				<img className="about-banner" src={howitworks} />
 				<div className="sitter-text">
 					<div className="row d-flex button-container">
 						<div className="container col-3 row-button">
@@ -153,7 +151,6 @@ export const Home = () => {
 							>
 								<h3
 									className="diphylleia-regular text-center button-text"
-									style={{ fontSize: "2vw" }}
 								>
 									<strong>Sign Up Now</strong>
 								</h3>
@@ -172,7 +169,6 @@ export const Home = () => {
 					<h4 className="diphylleia-regular client-and-sitter-headers"><strong>🌿 3. Browse and apply for available jobs in your area.</strong></h4>
 					<p className="client-and-sitter-text">Chat directly with plant owners near you and choose jobs that work for you.</p>
 				</div>
-			</div>
-		</>
+			</div>		</>
 	);
 };

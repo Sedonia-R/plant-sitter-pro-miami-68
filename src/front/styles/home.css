@@ -6,11 +6,11 @@
   position: relative;
 }
 
-.landing-page {
+.about-banner {
   width: 100%;
 }
 
-.hero-text {
+.hero-container {
   text-align: left;
   position: absolute;
   top: 0%;
@@ -21,7 +21,7 @@
   padding-top: 10px;
 }
 
-.hero-container {
+.hero-text {
   position: relative;
   height: 100%;
 }
@@ -60,6 +60,10 @@
   margin: 0;
   padding-bottom: 5px;
   font-size: 1.5vw;
+}
+
+.lp-subtext-last {
+  padding-bottom: 10px;
 }
 
 .home-button {
@@ -170,6 +174,43 @@ width: 68%;
 max-height: 100%;
 color: black;
 }
+
+@media only screen and (max-width: 600px) {
+  .hero-container {
+    padding-top: 1vh;
+  }
+
+  .hero-header {
+    top:1%;
+  }
+
+  .owner-and-caretaker-container {
+    padding-top: 2%;
+    bottom: 5%;
+  }
+
+  .lp-subheader {
+    margin: 0;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 3vw;
+  }
+  
+  .lp-subtext {
+    padding-bottom: 2px;
+    font-size: 1.5vw;
+  }
+
+  .lp-subtext-last {
+    padding-bottom: 0;
+  }
+
+  .home-button {
+    padding: 4px;
+  }
+}
+
+
 
 /* End Home page CSS */
 
