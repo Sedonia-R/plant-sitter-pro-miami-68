@@ -120,7 +120,7 @@
 }
 
 .row-header {
-  width: 60%;
+  width: 70%;
   padding: 0 0 0 10px;
 }
 
@@ -199,7 +199,7 @@
   }
 
   .lp-headers {
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
 
   .owner-and-caretaker-container {
@@ -274,6 +274,10 @@
   
   .client-and-sitter-text {
     font-size: 2vw;
+  }
+
+  .client-and-sitter-buttons {
+    padding: 2px;
   }
 
 }
