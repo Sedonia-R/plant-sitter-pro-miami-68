@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import "../../styles/index.css";
-// import PlantSitterCarousel from "../component/PlantSitterCard";
 import ServicesCarousel from "../component/ServicesCarousel";
 import { useNavigate } from "react-router-dom";
 import landing2 from "../../img/landing-page2.png";
@@ -46,7 +45,7 @@ export const Home = () => {
 									onClick={
 										() => {
 											actions.clearJobPostId();
-											navigate('/client-map')
+											navigate('/client-location')
 										}
 									}
 								>
@@ -106,7 +105,7 @@ export const Home = () => {
 								onClick={
 									() => {
 										actions.clearJobPostId();
-										navigate('/client-map')
+										navigate('/client-location')
 									}
 								}
 							>

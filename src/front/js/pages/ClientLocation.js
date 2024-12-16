@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
+import "../../styles/client-location.css";
 
-export const ClientMapPage = () => {
+export const ClientLocation = () => {
     const { store, actions } = useContext(Context);
     const navigate = useNavigate();
     const [zipCode, setZipCode] = useState("");
@@ -25,13 +25,13 @@ export const ClientMapPage = () => {
     };
 
     return (
-        <div className="text-center m-5">
+        <div className="text-center client-location-container">
             <h1 className="diphylleia-regular">Where are you located?</h1>
             <div className="text-center mb-1">
                 <p>Already have an account? <a href="/login"><u>Log in</u></a> to skip</p>
             </div>
             <form>
-                <div className="row container address mt-4 w-50">
+                <div className="row container address">
                     <input
                         placeholder=" ZIP code"
                         type="text"

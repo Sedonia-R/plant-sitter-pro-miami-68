@@ -1,0 +1,15 @@
+.client-location-container {
+    min-height: 70vh;
+    margin-top: 5vh;
+}
+
+.address {
+    margin: 15px auto;
+}
+
+.input-field {
+    width: 300px;
+    padding: 10px;
+    outline: black;
+    margin: 5px auto;
+}

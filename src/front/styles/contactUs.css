@@ -63,9 +63,10 @@
 }
 
 .contacts-button:hover {
-    background-image: linear-gradient(to top right, white, green, white);
+    background-color: green;
     color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    border: 1px solid white;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 .no-git-img {

@@ -13,7 +13,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { ProviderServices } from "./pages/providerServices";
 import { ProviderProfileCompleted } from "./pages/providerProfileCompleted";
-import { ClientMapPage } from "./pages/clientMapPage";
+import { ClientLocation } from "./pages/ClientLocation";
 import { ClientSignUp1 } from "./pages/clientSignUp1";
 import { ClientSignUp2 } from "./pages/clientSignUp2";
 import { ClientServices1 } from "./pages/clientServices1";
@@ -83,7 +83,7 @@ const Layout = () => {
                         <Route element={<ProviderProfile />} path="/provider-profile" />
                         <Route element={<ProviderProfileCompleted />} path="/provider-profile-completed" />
                         <Route element={<ProviderMapPage />} path="/provider-map" />
-                        <Route element={<ClientMapPage />} path="/client-map" />
+                        <Route element={<ClientLocation />} path="/client-location" />
                         <Route element={<ViewSitters />} path="/view-sitters" />
                         <Route element={<ClientSignUp1 />} path="/client-signup1" />
                         <Route element={<ProviderSignUp />} path="/provider-signup" />

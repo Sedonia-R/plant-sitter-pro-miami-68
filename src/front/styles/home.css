@@ -709,31 +709,14 @@ color: black;
   background-color:rgb(70, 108, 70);
 }
 
-  /* * {box-sizing: border-box;} */
 
-/* Style the input container */
-/* .input-container {
-  width: 700px;
-  margin-bottom: 5px;
-} */
 
-/* Style the input fields */
 .input-field {
   width: 300px;
   padding: 10px;
   outline: black;
   margin: 5px auto;
 }
-
-.address {
-  margin: 15px auto;
-}
-
-/* .input-field:focus {
-  border: 2px solid dodgerblue;
-} */ 
-
-
 
 
 /* Text displayed in the center when there's no profile picture */
