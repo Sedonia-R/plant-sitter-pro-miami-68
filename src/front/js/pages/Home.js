@@ -5,7 +5,7 @@ import "../../styles/index.css";
 import ServicesCarousel from "../component/ServicesCarousel";
 import { useNavigate } from "react-router-dom";
 import landing2 from "../../img/landing-page2.png";
-import howitworks from "../../img/howitworks.png";
+import forSitters from "../../img/howitworks.png";
 import helping from "../../img/helping.png";
 import helping2 from "../../img/helping2.png";
 import forOwners from "../../img/for-owners.png";
@@ -91,7 +91,7 @@ export const Home = () => {
 			</div>
 
 			<div className="hero-image">
-				<img className="about-banner for-owners" src={forOwners} />
+				<img className="for-owners-and-sitters" src={forOwners} />
 				<div className="owner-text">
 					<div className="row d-flex button-container">
 						<div className="row-header">
@@ -127,7 +127,7 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<h1 className="diphylleia-regular text-center carousel-header mt-4"><strong>Meet Some of Our Plant Sitters...</strong></h1>
+			<h1 className="diphylleia-regular text-center carousel-header mt-3"><strong>Meet Some of Our Plant Sitters...</strong></h1>
 			<div className="row plant-sitters">
 				<img className="sitter-pics" src={client} />
 				<img className="sitter-pics" src={profilepic} />
@@ -135,8 +135,8 @@ export const Home = () => {
 				<img className="sitter-pics" src={sitter2} />
 			</div>
 
-			<div className="hero-image mt-4">
-				<img className="about-banner" src={howitworks} />
+			<div className="hero-image">
+				<img className="for-owners-and-sitters" src={forSitters} />
 				<div className="sitter-text">
 					<div className="row d-flex button-container">
 						<div className="container col-3 row-button">
@@ -160,7 +160,6 @@ export const Home = () => {
 							<h1 className="diphylleia-regular lp-headers"><strong>How it works</strong></h1>
 						</div>
 					</div>
-
 					<h1 className="diphylleia-regular icon-with-text">Becoming a Plant Sitter <img  className="hand-holding-plant-icon" src={helping} /></h1>
 					<h4 className="diphylleia-regular client-and-sitter-headers"><strong>🌿 1. Register with our service and pass a background check</strong></h4>
 					<p className="client-and-sitter-text">Background check included with sign-up fee.</p>

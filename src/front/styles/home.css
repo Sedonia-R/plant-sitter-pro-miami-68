@@ -10,6 +10,10 @@
   width: 100%;
 }
 
+.for-owners-and-sitters {
+  width: 100%;
+}
+
 .hero-container {
   text-align: left;
   position: absolute;
@@ -104,7 +108,7 @@
   top: 10%;
   left: 4%;
   width: 68%;
-  max-height: 100%;
+  height: 90%;
   color: black;
 }
 
@@ -175,13 +179,13 @@
 }
 
 .sitter-text {
-text-align: right;
-position: absolute;
-top: 10%;
-right: 4%;
-width: 68%;
-max-height: 100%;
-color: black;
+  text-align: right;
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  width: 68%;
+  height: 90%;
+  color: black;
 }
 
 @media only screen and (max-width: 600px) {
@@ -195,7 +199,7 @@ color: black;
   }
 
   .about-banner {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   .lp-headers {
@@ -238,11 +242,46 @@ color: black;
     padding: 4px;
   }
 
+  .carousel-header {
+    font-size: 4vw;
+  }
+
+  .plant-sitters {
+    margin: 10px auto;
+  }
+
+  .hand-holding-plant-icon {
+    height: 8vw;
+    padding-bottom: 4px;
+  }
+
+  .icon-with-text {
+    font-size: 4vw;
+    margin: 0;
+  }
+
+  .owner-text {
+    top: 3%;
+    left: 2%;
+    width: 70%;
+  }
+
+  .sitter-text {
+    top: 3%;
+    right: 2%;
+    width: 70%;
+  }
+
+  .client-and-sitter-headers {
+    font-size: 2.4vw;
+  }
   
-.carousel-header {
-  font-size: 4vw;
+  .client-and-sitter-text {
+    font-size: 2vw;
+  }
+
 }
-}
+
 
 
 
