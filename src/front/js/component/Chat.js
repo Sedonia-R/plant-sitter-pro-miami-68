@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import '../../styles/Chat.css'; // Ensure this path is correct
+import '../../styles/chat.css'; // Ensure this path is correct
 
 function Chat() {
     const [isOpen, setIsOpen] = useState(false);
