@@ -9,7 +9,7 @@ import { ProviderProfile } from "./pages/providerProfile";
 import { ProviderMapPage } from "./pages/providerMapPage";
 import injectContext from "./store/appContext";
 import { ProviderSignUp } from "./pages/providerSignUp";
-import { Navbar } from "./component/navbar";
+import { Navbar } from "./component/Navbar";
 import { Footer } from "./component/footer";
 import { ProviderServices } from "./pages/providerServices";
 import { ProviderProfileCompleted } from "./pages/providerProfileCompleted";

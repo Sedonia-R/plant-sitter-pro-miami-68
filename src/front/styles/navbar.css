@@ -9,7 +9,8 @@
 }
 
 .logo {
-  height: 10vh;
+  height: 10vw;
+  width: auto;
 }
 
 .example-only {
@@ -22,7 +23,7 @@
 }
 
 .dropdown-item, li {
-    font-size: 1.5vw;
+  font-size: 1.5vw;
 }
 
 li:hover {
@@ -31,4 +32,18 @@ li:hover {
 
 .scrollLink:hover {
   background-color: rgb(238, 238, 238);
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: 10vh;  }
+  
+  #dropdownMenuButton1 {
+    font-size: 2.5vw;
+    color: red;
+  }
+
+  .dropdown-item, li {
+    font-size: 2.5vw;
+  }
 }
