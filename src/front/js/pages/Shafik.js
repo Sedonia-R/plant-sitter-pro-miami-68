@@ -1,5 +1,6 @@
 import React from "react";
 import Shafik from "../../img/Shafik.png";
+import NoGit from "../../img/no-git.png";
 import "../../styles/index.css";
 import "../../styles/aboutContacts.css";
 
@@ -27,6 +28,31 @@ export const AboutShafik = () => {
                     </p>
                 </div>
             </div>
+            <hr />
+           <div className="contact-me">
+                <a className="contact-ico" href="mailto:shafik@snbsystems.com">
+                    <div className="contact-me-header diphylleia-regular">Contact Me: </div>
+                    <i className="fa-regular fa-envelope"/>
+                </a>
+                <div className="divider">|</div>
+                <a className="contact-ico" href="https://www.linkedin.com/in/shafikbahou/">
+                    <div className="contact-me-header diphylleia-regular">Linkedin:</div>
+                    <i className="fa-brands fa-linkedin"/>
+                </a>
+                <div className="divider">|</div>
+                <div className="popup-wrap">
+                    {/* <div className="contact-me-header diphylleia-regular">GitHub:</div> */}
+                    <img 
+                        src={NoGit} 
+                        alt="Image of GitHub icon with red circle and line indicating no GitHub profile is available." 
+                        className="no-git"  
+                    />
+                    <div className="popup-content">
+                        No Repo Available. 😔
+                    </div> 
+                </div>
+            </div>
+            <hr />
         </div>
     )
 }

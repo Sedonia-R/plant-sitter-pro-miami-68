@@ -260,12 +260,14 @@
     top: 3%;
     left: 2%;
     width: 70%;
+    height: 97%;
   }
 
   .sitter-text {
     top: 3%;
     right: 2%;
     width: 70%;
+    height: 97%;
   }
 
   .client-and-sitter-headers {
@@ -350,15 +352,6 @@
 
 
 
-
-.contact-us {
-  text-decoration: none !important;
-  color: white !important;
-}
-
-.contact-us:hover {
-  color: black !important;
-}
 
 
 

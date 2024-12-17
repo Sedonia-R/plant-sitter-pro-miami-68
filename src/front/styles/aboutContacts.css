@@ -24,15 +24,57 @@
     border: 2px solid green;
 }
 
+.no-git {
+    height: 2rem;
+    margin-top: -0.8vh;
+    margin-left: 2vw;
+}
+
+.no-git:hover {
+    cursor: pointer;
+}
+
 .about-text {
     padding-left: 3vw;
-    padding-top: 2vh;
 }
 
 .pic-and-text-container {
     width: 100%;
     display: flex;
     padding: 2vw;
+}
+
+.contact-me-header {
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.contact-me {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-ico {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    color: black;
+    margin: 0 2vw;
+}
+
+.divider {
+    margin: -5px 2vw;
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+}
+  
+.contact-ico:hover {
+    color: green
 }
 
 @media only screen and (max-width: 600px) {
@@ -47,7 +89,7 @@
     }
 
     .about-pic {
-        margin: auto;
+        margin: 0 auto 32px auto;
         width: 60vw;
         height: 60vw;
     }
@@ -55,4 +97,25 @@
     .about-text {
         margin-top: 1vh;
     }
+
+    .contact-me-header {
+        display: none;
+    }
+
+    .contact-me {
+        font-size: 1.6rem;
+    }
+
+    .contact-ico {
+        margin: 0 4vw;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .no-git {
+        height: 1.6rem;
+    }
+
 }

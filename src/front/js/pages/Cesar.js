@@ -27,6 +27,24 @@ export const AboutCesar = () => {
                     </p>
                 </div>
             </div>
+            <hr />
+            <div className="contact-me">
+                <a className="contact-ico" href="mailto:cesar.rafael.gep@gmail.com">
+                    <div className="contact-me-header diphylleia-regular">Contact Me: </div>
+                    <i className="fa-regular fa-envelope"/>
+                </a>
+                <div className="divider">|</div>
+                <a className="contact-ico" target="_blank" href="https://www.linkedin.com/in/cesaramcolson">
+                    <div className="contact-me-header diphylleia-regular">Linkedin:</div>
+                    <i className="fa-brands fa-linkedin"/>
+                </a>
+                <div className="divider">|</div>
+                <a className="contact-ico" target="_blank" href="https://github.com/cesaramcolson">
+                    <div className="contact-me-header diphylleia-regular">GitHub:</div>
+                    <i className="fa-brands fa-github"/>
+                </a>
+            </div>
+            <hr />
         </div>
     )
 }

@@ -66,6 +66,16 @@
     justify-content: space-around;
 }
 
+.contact-us {
+    /* text-decoration: none !important; */
+    color: white !important;
+}
+  
+.contact-us:hover {
+    color: black !important;
+}
+  
+
 .contacts > hr {
     margin-top: 0 !important;
 }
