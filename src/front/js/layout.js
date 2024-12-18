@@ -20,7 +20,7 @@ import { ClientServices1 } from "./pages/clientServices1";
 import { JobPost1 } from "./pages/jobPost";
 import { JobPost2 } from "./pages/jobPostPreview";
 import { JobPostUpdate } from "./pages/JobPostUpdate";
-import { SignUp } from "./component/SignUp";
+import { SignUp } from "./pages/SignUp";
 import { Login } from "./pages/Login.js";
 import { ViewJobs } from "./pages/viewJobs";
 import { Blog } from "./pages/Blog";
@@ -53,11 +53,12 @@ import { ClientServicesUpdate } from "./pages/clientServicesUpdate";
 import { Trimming } from "./pages/ExampleLoading.js";
 import { ProviderPaymentPage } from "./pages/providerPaymentPage.js";
 import { ApplicantProfiles } from "./pages/applicantProfiles.js";
-import {AboutSedonia} from "./pages/Sedonia.js";
-import {AboutCesar} from "./pages/Cesar.js";
-import {AboutGerry} from "./pages/Gerry.js";
-import {AboutOneil} from "./pages/Oneil.js";
-import {AboutShafik} from "./pages/Shafik.js";
+import { AboutSedonia } from "./pages/Sedonia.js";
+import { AboutCesar } from "./pages/Cesar.js";
+import { AboutGerry } from "./pages/Gerry.js";
+import { AboutOneil } from "./pages/Oneil.js";
+import { AboutShafik } from "./pages/Shafik.js";
+import { Terms } from "./pages/Terms.js";
 
 const Layout = () => {
     const basename = process.env.BASENAME || "";
@@ -122,6 +123,7 @@ const Layout = () => {
                         <Route element={<AboutShafik />} path="/Shafik" />
                         <Route element={<ProviderPaymentPage />} path="/provider-payment" />
                         <Route element={<ApplicantProfiles />} path="/applicant-profiles/:sitter_id" />
+                        <Route element={<Terms />} path="/terms-and-conditions" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     {/* <Chat /> */}

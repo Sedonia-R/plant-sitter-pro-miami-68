@@ -1,0 +1,14 @@
+.terms-container {
+    min-height: 80vh;
+}
+
+.terms-header {
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.terms-text {
+    margin: 2rem;
+    text-align: justify;
+}

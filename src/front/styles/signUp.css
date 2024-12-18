@@ -1,0 +1,26 @@
+.form-container {
+    width: 70%;
+}
+
+.jobs {
+    text-align: center;
+}
+
+.terms-link {
+    text-decoration: underline;
+    color: blue;
+}
+
+.terms:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .terms {
+        font-size: 3.6vw;
+    }
+
+    .terms-checkbox {
+        margin-right: 8px !important;
+    }
+}

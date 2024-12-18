@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
 import "../../styles/handleSubmit.css"
+import "../../styles/signUp.css";
 import "../../styles/index.css";
 
 
@@ -55,7 +55,7 @@ export const SignUp = () => {
 
     return (
         <div className="row justify-content-center">
-            <div className="col-lg-6 bg-indigo">
+            <div className="form-container">
                 <h1 className="fw-normal mb-1 mt-4 diphylleia-regular jobs">Create an account</h1>
 
                 <div className="text-center mt-2 mb-4">
@@ -64,24 +64,24 @@ export const SignUp = () => {
 
                 <form onSubmit={handleSubmit}>
                     <div className="row">
-                        <div className="col-md-6 mb-2 pb-2">
+                        <div className="mb-2 pb-2">
                             <div data-mdb-input-init className="form-outline form-white">
                                 <input
                                     type="text"
                                     id="firstName"
-                                    className="form-control form-control-lg"
+                                    className="form-control form-control"
                                     value={firstName}
                                     onChange={(e) => setFirstName(e.target.value)}
                                 />
                                 <label className="form-label" htmlFor="firstName">First Name</label>
                             </div>
                         </div>
-                        <div className="col-md-6 mb-2 pb-2">
+                        <div className="mb-2 pb-2">
                             <div data-mdb-input-init className="form-outline form-white">
                                 <input
                                     type="text"
                                     id="lastName"
-                                    className="form-control form-control-lg"
+                                    className="form-control form-control"
                                     value={lastName}
                                     onChange={(e) => setLastName(e.target.value)}
                                 />
@@ -95,7 +95,7 @@ export const SignUp = () => {
                             <input
                                 type="text"
                                 id="addressLine1"
-                                className="form-control form-control-lg"
+                                className="form-control form-control"
                                 value={addressLine1}
                                 onChange={(e) => setAddressLine1(e.target.value)}
                             />
@@ -108,38 +108,29 @@ export const SignUp = () => {
                             <input
                                 type="text"
                                 id="addressLine2"
-                                className="form-control form-control-lg"
+                                className="form-control form-control"
                                 value={addressLine2}
                                 onChange={(e) => setAddressLine2(e.target.value)}
                             />
                             <label className="form-label" htmlFor="addressLine2">Address Line 2</label>
                         </div>
                     </div>
-
                     <div className="row">
-                        <div className="col-md-5 mb-2 pb-2">
+                        <div className="col-7 mb-2 pb-2">
                             <div data-mdb-input-init className="form-outline form-white">
                                 <input
                                     type="text"
                                     id="city"
-                                    className="form-control form-control-lg"
+                                    className="form-control form-control"
                                     value={city}
                                     onChange={(e) => setCity(e.target.value)}
                                 />
                                 <label className="form-label" htmlFor="city">City</label>
                             </div>
                         </div>
-
-                        <div className="col-md-3 mb-2 pb-2">
+                        <div className="col-5 mb-2 pb-2">
                             <div data-mdb-input-init className="form-outline form-white">
-                                {/* <input
-                                    type="text"
-                                    id="state"
-                                    className="form-control form-control-lg"
-                                    value={state}
-                                    onChange={(e) => setState(e.target.value)}
-                                /> */}
-                                <select className="form-select form-select-lg mb-2" aria-label="Default select example" for="state" value={state}
+                                <select className="form-select form-select mb-2" aria-label="Default select example" for="state" value={state}
                                     onChange={(e) => setState(e.target.value)}>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -195,20 +186,19 @@ export const SignUp = () => {
                                 </select>
                             </div>
                         </div>
-
-                        <div className="col-md-4 mb-2 pb-2">
+                    </div>
+                        <div className="row mb-2 pb-2">
                             <div data-mdb-input-init className="form-outline form-white">
                                 <input
                                     type="text"
                                     id="zipCode"
-                                    className="form-control form-control-lg"
+                                    className="form-control form-control"
                                     value={zipCode}
                                     onChange={(e) => setZipCode(e.target.value)}
                                 />
                                 <label className="form-label" htmlFor="zipCode">ZIP Code</label>
                             </div>
                         </div>
-                    </div>
 
                     <div className="mb-2 pb-2">
                         <fieldset disabled>
@@ -230,7 +220,7 @@ export const SignUp = () => {
                             <input
                                 type="tel"
                                 id="phone"
-                                className="form-control form-control-lg"
+                                className="form-control form-control"
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
                             />
@@ -243,7 +233,7 @@ export const SignUp = () => {
                             <input
                                 type="text"
                                 id="email"
-                                className="form-control form-control-lg"
+                                className="form-control form-control"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
@@ -256,7 +246,7 @@ export const SignUp = () => {
                             <input
                                 type="password"
                                 id="password"
-                                className="form-control form-control-lg"
+                                className="form-control form-control"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
@@ -268,7 +258,7 @@ export const SignUp = () => {
                             <input
                                 type="password"
                                 id="confirmPassword"
-                                className="form-control form-control-lg"
+                                className="form-control form-control"
                                 value={confirmPassword}
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                             />
@@ -278,14 +268,14 @@ export const SignUp = () => {
 
                     <div className="form-check d-flex justify-content-start mb-2 pb-3">
                         <input
-                            className="form-check-input me-3"
+                            className="form-check-input me-3 terms-checkbox "
                             type="checkbox"
                             value={termsAccepted}
                             onChange={(e) => setTermsAccepted(e.target.checked)}
                             id="terms"
                         />
-                        <label className="form-check-label" htmlFor="terms">
-                            I do accept the <a href="#!" className=""><u>Terms and Conditions</u></a> of your site.
+                        <label className="form-check-label terms" htmlFor="terms">
+                            I do accept the <span className="terms-link" onClick={(e) => navigate('/terms-and-conditions')}>Terms and Conditions</span>.
                         </label>
                     </div>
 
