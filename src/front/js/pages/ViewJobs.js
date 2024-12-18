@@ -66,7 +66,7 @@ export const ViewJobs = () => {
             <div className="hero-image">
                 <img className="bkgd-img" src={sitterSignUp} alt="Plant Sitter Sign Up" />
                 <div className="view-jobs-text row">                    
-                    <h3 className="diphylleia-regular signup-header">
+                    <h3 className="diphylleia-regular signup-header mb-2">
                         <strong>Benefits of Joining...</strong>
                     </h3>
                     <h4 className="diphylleia-regular signup-subheader">

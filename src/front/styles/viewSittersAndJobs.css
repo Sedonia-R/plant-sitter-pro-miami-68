@@ -38,29 +38,29 @@
 .view-jobs-text {
     width: 100%;
     position: absolute;
-    top: 3%;
+    top: 5%;
     left: 0;
     padding-left: 3vw;
 }
 
 .signup-header {
-    font-size: 3vh;
+    font-size: 3.3vw;
     margin: 0;
 }
 
 .signup-subheader {
-    font-size: 2vh;
-    margin: 0.8vh 0 0 0;
+    font-size: 2.4vw;
+    margin: 0.6vh 0 0.6vh 0;
 }
 
 .sign-up-text {
-    font-size: 1.5vh;
+    font-size: 1.8vw;
     margin: 0;
 }
 
 .subscribe  {
     display: flex;
-    margin: 5vh auto;
+    margin: 5vw auto;
 }
 
 @media only screen and (max-width: 600px) {
