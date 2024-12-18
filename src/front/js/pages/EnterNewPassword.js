@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import "../../styles/enternewpassword.css"
+import "../../styles/enterNewPassword.css"
+import "../../styles/forgotPassword.css"
 import "../../styles/index.css";
 
 export const EnterNewPassword = () => {
@@ -37,26 +38,26 @@ export const EnterNewPassword = () => {
     };
 
     return (
-        <div>
-            <div className="new-password-container">
-                <h1 className="new-password-header">Enter New Password</h1>
+        <div className="page-container">
+            <div className="forgot-password-container">
+                <h1 className="forgot-password-header ">Enter New Password</h1>
                 {error && <div className="alert alert-danger">{error}</div>}
                 {success && <div className="alert alert-success">{success}</div>}
                 <input
                     type="password"
-                    className="new-password-input"
+                    className="forgot-password-input mb-3"
                     value={newPassword}
                     onChange={(e) => setNewPassword(e.target.value)}
                     placeholder="Enter your new password"
                 />
                 <input
                     type="password"
-                    className="new-password-input"
+                    className="forgot-password-input mb-3"
                     value={confirmNewPassword}
                     onChange={(e) => setConfirmNewPassword(e.target.value)}
                     placeholder="Confirm New Password"
                 />
-                <button className="new-password-button" onClick={handleSubmit}>Submit</button>
+                <button className="forgot-password-button rounded-pill" onClick={handleSubmit}>Submit</button>
             </div>
         </div>
     );

@@ -1,8 +1,8 @@
  import React, { useState, useEffect, useContext } from "react";
  import { Context } from "../store/appContext";
  import { useNavigate } from "react-router-dom";
- import { Modal } from 'react-bootstrap'; // Make sure to install react-bootstrap
- import "../../styles/forgotpassword.css"; // Link to your CSS file
+ import { Modal } from 'react-bootstrap';
+ import "../../styles/forgotPassword.css";
  import "../../styles/index.css";
 
  export const ForgotPassword = () => {
