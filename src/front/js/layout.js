@@ -105,7 +105,7 @@ const Layout = () => {
                         <Route element={<JobPostsList />} path="/job-posts" />
                         <Route element={<AccountVerification />} path="/verification" />
                         <Route element={<ForgotPassword />} path="/forgot-password" />
-                        <Route element={<EnterNewPassword />} path="/enternewpassword" />
+                        <Route element={<EnterNewPassword />} path="/enternewpassword" /> {/* Change to enter-new-password? Need to correct all uses in app */}
                         <Route element={<Cancel />} path="/cancel" />
                         <Route element={<ProviderLandingPage />} path="/provider-landing" />
                         <Route element={<ClientLandingPage />} path="/client-landing" />
