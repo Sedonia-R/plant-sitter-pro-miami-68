@@ -8,14 +8,14 @@ import { Single } from "./pages/single";
 import { ProviderProfile } from "./pages/providerProfile";
 import { ProviderLocation } from "./pages/ProviderLocation.js";
 import injectContext from "./store/appContext";
-import { ProviderSignUp } from "./pages/providerSignUp";
+import { SitterSignUp } from "./pages/SitterSignUp.js";
 import { Navbar } from "./component/Navbar";
 import { Footer } from "./component/Footer";
 import { ProviderServices } from "./pages/providerServices";
 import { ProviderProfileCompleted } from "./pages/providerProfileCompleted";
 import { ClientLocation } from "./pages/ClientLocation";
-import { ClientSignUp1 } from "./pages/clientSignUp1";
-import { ClientSignUp2 } from "./pages/clientSignUp2";
+import { ClientSubscription } from "./pages/ClientSubscription.js";
+import { ClientSignUp } from "./pages/ClientSignUp.js";
 import { ClientServices1 } from "./pages/clientServices1";
 import { JobPost1 } from "./pages/jobPost";
 import { JobPost2 } from "./pages/jobPostPreview";
@@ -51,7 +51,7 @@ import { ProfileSuccessPage } from "./pages/profileSuccessPage";
 import { CompletedJobsPage } from "./pages/completedJobsPage";
 import { ClientServicesUpdate } from "./pages/clientServicesUpdate";
 import { Trimming } from "./pages/ExampleLoading.js";
-import { ProviderPaymentPage } from "./pages/providerPaymentPage.js";
+import { SitterSubscriptionPage } from "./pages/SitterSubscriptionPage.js";
 import { ApplicantProfiles } from "./pages/applicantProfiles.js";
 import { AboutSedonia } from "./pages/Sedonia.js";
 import { AboutCesar } from "./pages/Cesar.js";
@@ -85,9 +85,9 @@ const Layout = () => {
                         <Route element={<ProviderLocation />} path="/provider-location" />
                         <Route element={<ClientLocation />} path="/client-location" />
                         <Route element={<ViewSitters />} path="/view-sitters" />
-                        <Route element={<ClientSignUp1 />} path="/client-signup1" />
-                        <Route element={<ProviderSignUp />} path="/provider-signup" />
-                        <Route element={<ClientSignUp2 />} path="/client-signup2" />
+                        <Route element={<ClientSubscription />} path="/client-subscription" />
+                        <Route element={<SitterSignUp />} path="/sitter-signup" />
+                        <Route element={<ClientSignUp />} path="/client-signup" />
                         <Route element={<Login />} path="/login" />
                         <Route element={<SignUp />} path="/signup" />
                         <Route element={<ViewJobs />} path="/view-jobs" />
@@ -121,7 +121,7 @@ const Layout = () => {
                         <Route element={<AboutGerry />} path="/Gerry" />
                         <Route element={<AboutOneil />} path="/Oneil" />
                         <Route element={<AboutShafik />} path="/Shafik" />
-                        <Route element={<ProviderPaymentPage />} path="/provider-payment" />
+                        <Route element={<SitterSubscriptionPage />} path="/sitter-subscription-page" />
                         <Route element={<ApplicantProfiles />} path="/applicant-profiles/:sitter_id" />
                         <Route element={<Terms />} path="/terms-and-conditions" />
                         <Route element={<h1>Not found!</h1>} />

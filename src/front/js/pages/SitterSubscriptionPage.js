@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import plant from "../../img/plant.png";
 import "../../styles/index.css";
 
-export const ClientSignUp1 = () => {
+export const SitterSubscriptionPage = () => {
 	// const { store, actions } = useContext(Context);
 	const navigate = useNavigate();
 
@@ -29,7 +29,7 @@ export const ClientSignUp1 = () => {
 								className="btn btn-success mb-5 col-6 rounded-pill"
 								onClick={
 									() => {
-										navigate('/client-signup2')
+										navigate('/sitter-signup')
 									}
 								}
 							>

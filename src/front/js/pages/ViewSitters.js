@@ -16,7 +16,7 @@ export const ViewSitters = () => {
         if (store.token) {
             navigate("/client-services1");
         } else {
-            navigate("/client-signup1");
+            navigate("/client-subscription");
         }
     };
 

@@ -6,7 +6,7 @@ import { Modal, Button } from "react-bootstrap";
 import "../../styles/handleSubmit.css"
 import "../../styles/index.css";
 
-export const ProviderSignUp = () => {
+export const SitterSignUp = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");

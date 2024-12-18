@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 import plant from "../../img/plant.png";
 import "../../styles/index.css";
 
-export const ProviderPaymentPage = () => {
+export const ClientSubscription = () => {
 	// const { store, actions } = useContext(Context);
 	const navigate = useNavigate();
 
 	useEffect(() => {
 		const token = sessionStorage.getItem("token");
 		if (token) {
-			navigate("/client-signup1");
+			navigate("/client-subscription");
 		}
 	}, [navigate]);
 
@@ -29,7 +29,7 @@ export const ProviderPaymentPage = () => {
 								className="btn btn-success mb-5 col-6 rounded-pill"
 								onClick={
 									() => {
-										navigate('/provider-signup')
+										navigate('/client-signup')
 									}
 								}
 							>

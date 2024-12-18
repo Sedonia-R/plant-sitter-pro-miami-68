@@ -6,7 +6,7 @@ import { Modal, Button } from "react-bootstrap";
 import "../../styles/handleSubmit.css"
 import "../../styles/index.css";
 
-export const ClientSignUp2 = () => {
+export const ClientSignUp = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
@@ -49,7 +49,7 @@ export const ClientSignUp2 = () => {
 
     const handleCloseModal = () => {
         setShowModal(false);
-        navigate('/client-services1');
+        navigate('/client-subscription');
     };
 
     return (
