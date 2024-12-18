@@ -1,0 +1,119 @@
+.signup-container {
+    min-height: 80vh;
+}
+
+.job-count {
+    padding-top: 4vh;
+    text-align: center;
+    margin: 0;
+}
+
+.available {
+    padding: 6vh 1vw;
+    margin: 0;
+}
+
+.none-available {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.bkgd-img {
+    width: 100%;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+    position: relative;
+}
+
+.view-sitters-text {
+    width: 100%;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    padding-left: 30vw;
+}
+
+.view-jobs-text {
+    width: 100%;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    padding-left: 3vw;
+}
+
+.signup-header {
+    font-size: 3vh;
+    margin: 0;
+}
+
+.signup-subheader {
+    font-size: 2vh;
+    margin: 0.8vh 0 0 0;
+}
+
+.sign-up-text {
+    font-size: 1.5vh;
+    margin: 0;
+}
+
+.subscribe  {
+    display: flex;
+    margin: 5vh auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .job-count {
+        font-size: 5.5vw;
+    }
+    
+    .available-sitters {
+        padding: 3vh 0;
+        margin: 0;
+    }
+    
+    .bkgd-img {
+        display: none;
+    }
+
+    .img-text {
+        width: 100%;
+        position: unset;
+
+    }
+
+    .left-space {
+        width: 0;
+    }
+    
+    .right-text {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .signup-header {
+        font-size: 5.5vw;
+        text-align: center;
+    }
+    
+    .signup-subheader {
+        font-size: 4.5vw;
+        margin: 1vh 0;
+    }
+    
+    .sign-up-text {
+        font-size: 2vh;
+        margin: 0;
+    }
+
+    .subscribe  {
+        display: flex;
+        justify-self: baseline;
+    }
+
+    .button-text {
+        font-size: 4vw;
+    }
+
+}

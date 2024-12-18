@@ -16,7 +16,8 @@ export const ProviderLocation = () => {
             if (res.success) {
                 navigate('/view-jobs');
             } else {
-                alert("No job posts yet in your search area. Try expanding your search.");
+                // alert("No job posts yet in your search area. Try expanding your search.");
+                navigate('/view-jobs')
             }
         } else {
             alert("Please enter a valid ZIP code and distance.");
@@ -57,7 +58,7 @@ export const ProviderLocation = () => {
             </div>
             <button
                 type="button"
-                className="btn btn-success mt-3 col-2 rounded-pill"
+                className="btn btn-success location-button rounded-pill"
                 onClick={handleSearch}
             >
                 Next

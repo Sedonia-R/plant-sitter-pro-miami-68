@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import noImage from "../../img/noImage.png";
-import clientSignUp from "../../img/client-sign-up.png";
+import sitterSignUp from "../../img/view-jobs.png";
 import { useNavigate } from "react-router-dom";
+import "../../styles/home.css";
 import "../../styles/index.css";
+import "../../styles/viewSittersAndClients.css";
 
 export const ViewJobs = () => {
     const { store } = useContext(Context);
@@ -12,12 +13,12 @@ export const ViewJobs = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="row d-flex">
-            <h1 className="mb-3 mt-4 diphylleia-regular jobs">
+        <div className="signup-container">
+            <h1 className="diphylleia-regular job-count">
                 <strong>There are {jobPosts.length} jobs available near you!</strong>
             </h1>
 
-            <div className="d-flex row m-3">
+            <div className="d-flex row available">
                 {jobPosts.length > 0 ? (
                     jobPosts.map((jobPost) => (
                         <div 
@@ -56,62 +57,53 @@ export const ViewJobs = () => {
                         </div>
                     ))
                 ) : (
-                    <div className="text-center w-100">
+                    <div className="none-available">
                         <p>No job posts found near your location.</p>
                     </div>
                 )}
             </div>
 
-            <div className="hero-image mt-5">
-                <img className="landing-page for-owners" src={clientSignUp} alt="Client Sign Up" />
-                <div className="owner-text row">
-                    <div className="col-5"></div>
-                    <div className="col-7">
-                        <h3 className="diphylleia-regular" style={{ fontSize: "3vw" }}>
+            <div className="hero-image">
+                <img className="bkgd-img" src={sitterSignUp} alt="Plant Sitter Sign Up" />
+                <div className="view-jobs-text row">                    
+                    <div className="left-text">
+                        <h3 className="diphylleia-regular signup-header">
                             <strong>Benefits of Joining...</strong>
                         </h3>
-                        <h4 className="diphylleia-regular mt-4" style={{ fontSize: "2vw" }}>
+                        <h4 className="diphylleia-regular signup-subheader">
                             <strong>✔️ Easy</strong>
                         </h4>
-                        <p className="mb-0" style={{ fontSize: "1.5vw" }}>
+                        <p className="sign-up-text">
                             🌿 Easily search and apply for jobs in your area.
                         </p>
-                        {/* <p className="mb-4" style={{ fontSize: "1.5vw" }}>
-                            🌿 Background checks completed for all plant sitters.
-                        </p> */}
-                        <h4 className="diphylleia-regular mt-3" style={{ fontSize: "2vw" }}>
+                        <h4 className="diphylleia-regular signup-subheader">
                             <strong>✔️ Convenient</strong>
                         </h4>
-                        <p className="mb-0" style={{ fontSize: "1.5vw" }}>
+                        <p className="sign-up-text">
                             🌿 Choose only the jobs you want, when you want them.
-                        </p>
-                        {/* <p className="mb-4" style={{ fontSize: "1.5vw" }}>
+                        <p className="sign-up-text">
                             🌿 Cancel any time.
-                        </p> */}
-                        <h4 className="diphylleia-regular mt-3" style={{ fontSize: "2vw" }}>
+                        </p>
+                        </p>
+                        <h4 className="diphylleia-regular signup-subheader">
                             <strong>✔️ Affordable</strong>
                         </h4>
-                        <p className="mb-0" style={{ fontSize: "1.5vw" }}>
-                            🌿 Pay only $__ /month to utilize our platform.
-                        </p>
-                        <p className="mb-4" style={{ fontSize: "1.5vw" }}>
-                            🌿 Cancel any time.
+                        <p className="sign-up-text">
+                            🌿 Pay a modest fee to utilize our platform.
                         </p>
                     </div>
                 </div>
             </div>
 
-			<div className="container mt-5 col-3">
-                <button
-                    type="submit"
-                    className="btn col-12 rounded-pill mt-2"
-                    onClick={() => navigate('/provider-payment')}
-                >
-                    <h3 className="diphylleia-regular text-center" style={{ fontSize: "2vw" }}>
-                        <strong>Subscribe Now</strong>
-                    </h3>
-                </button>
-            </div>
+            <button
+                type="submit"
+                className="btn subscribe rounded-pill"
+                onClick={() => navigate('/provider-payment')}
+            >
+                <h3 className="diphylleia-regular button-text">
+                    <strong>Subscribe Now</strong>
+                </h3>
+            </button>
         </div>
     );
 };

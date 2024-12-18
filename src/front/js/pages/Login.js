@@ -29,7 +29,7 @@ export const Login = () => {
 
   return (
     <div className="row login-container" onKeyDown={handleKeyDown}>
-      <div className="col-6 bg-indigo">
+      <div className="col-10">
         <h1 className="fw-normal mt-5 diphylleia-regular jobs">
           Log in to your account
         </h1>

@@ -22,7 +22,7 @@ import { JobPost2 } from "./pages/jobPostPreview";
 import { JobPostUpdate } from "./pages/JobPostUpdate";
 import { SignUp } from "./pages/SignUp";
 import { Login } from "./pages/Login.js";
-import { ViewJobs } from "./pages/viewJobs";
+import { ViewJobs } from "./pages/ViewJobs.js";
 import { Blog } from "./pages/Blog";
 import AccountSettings from "./pages/account"
 import { PersonalInfo } from "./pages/PersonalInfo"
@@ -34,12 +34,12 @@ import RepottingService from "./pages/RepottingService";
 import PruningService from "./pages/PruningService";
 import PestControlService from "./pages/PestControlService";
 import PlantCleaningService from "./pages/PlantCleaningService";
-import Chat from './component/Chat';
+// import Chat from './component/Chat';
 import { PlantSitterProfile } from './pages/PlantSitterProfile';
 import { AccountVerification } from "./pages/AccountVerification";
 import { EnterNewPassword } from "./pages/EnterNewPassword";
 import { ForgotPassword } from "./pages/ForgotPassword";
-import { ViewSitters } from "./pages/viewSitters";
+import { ViewSitters } from "./pages/ViewSitters.js";
 import { Cancel } from "./pages/cancel";
 import { ProviderLandingPage } from "./pages/providerLandingPage";
 import { ClientLandingPage } from "./pages/clientLandingPage";

@@ -16,3 +16,10 @@ button {
     cursor: pointer;
     border-radius: 4px;
 }
+
+.button-text{
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    font-size: 2vw;
+}

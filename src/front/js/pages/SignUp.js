@@ -130,7 +130,7 @@ export const SignUp = () => {
                         </div>
                         <div className="col-5 mb-2 pb-2">
                             <div data-mdb-input-init className="form-outline form-white">
-                                <select className="form-select form-select mb-2" aria-label="Default select example" for="state" value={state}
+                                <select className="form-select form-select mb-2" aria-label="Default select example" htmlFor="state" value={state}
                                     onChange={(e) => setState(e.target.value)}>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
