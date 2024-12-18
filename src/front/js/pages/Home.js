@@ -50,7 +50,7 @@ export const Home = () => {
 									}
 								>
 									<h3
-										className="diphylleia-regular button-text"
+										className="diphylleia-regular home-button-text"
 									>
 										<strong>Find Help</strong>
 									</h3>
@@ -74,7 +74,7 @@ export const Home = () => {
 									}
 								>
 									<h3
-										className="diphylleia-regular button-text"
+										className="diphylleia-regular home-button-text"
 									>
 										<strong>Find Jobs</strong>
 									</h3>
@@ -100,7 +100,7 @@ export const Home = () => {
 						<div className="container row-button">
 							<button
 								type="button"
-								className="btn rounded-pill client-and-sitter-buttons"
+								className="btn rounded-pill home-button"
 								onClick={
 									() => {
 										actions.clearJobPostId();
@@ -109,7 +109,7 @@ export const Home = () => {
 								}
 							>
 								<h3
-									className="diphylleia-regular button-text"
+									className="diphylleia-regular home-button-text"
 								>
 									<strong>Browse Now</strong>
 								</h3>
@@ -127,7 +127,7 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<h1 className="diphylleia-regular text-center carousel-header mt-3"><strong>Meet Some of Our Plant Sitters...</strong></h1>
+			<h1 className="diphylleia-regular carousel-header mt-3"><strong>Meet Some of Our Plant Sitters...</strong></h1>
 			<div className="row plant-sitters">
 				<img className="sitter-pics" src={client} />
 				<img className="sitter-pics" src={profilepic} />
@@ -142,7 +142,7 @@ export const Home = () => {
 						<div className="container col-3 row-button">
 							<button
 								type="button"
-								className="btn col-12 rounded-pill client-and-sitter-buttons"
+								className="btn col-12 rounded-pill home-button"
 								onClick={
 									() => {
 										navigate('/provider-location')
@@ -150,7 +150,7 @@ export const Home = () => {
 								}
 							>
 								<h3
-									className="diphylleia-regular text-center button-text"
+									className="diphylleia-regular home-button-text"
 								>
 									<strong>Sign Up Now</strong>
 								</h3>

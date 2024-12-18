@@ -5,7 +5,7 @@ import sitterSignUp from "../../img/view-jobs.png";
 import { useNavigate } from "react-router-dom";
 import "../../styles/home.css";
 import "../../styles/index.css";
-import "../../styles/viewSittersAndClients.css";
+import "../../styles/viewSittersAndJobs.css";
 
 export const ViewJobs = () => {
     const { store } = useContext(Context);
@@ -66,32 +66,30 @@ export const ViewJobs = () => {
             <div className="hero-image">
                 <img className="bkgd-img" src={sitterSignUp} alt="Plant Sitter Sign Up" />
                 <div className="view-jobs-text row">                    
-                    <div className="left-text">
-                        <h3 className="diphylleia-regular signup-header">
-                            <strong>Benefits of Joining...</strong>
-                        </h3>
-                        <h4 className="diphylleia-regular signup-subheader">
-                            <strong>✔️ Easy</strong>
-                        </h4>
-                        <p className="sign-up-text">
-                            🌿 Easily search and apply for jobs in your area.
-                        </p>
-                        <h4 className="diphylleia-regular signup-subheader">
-                            <strong>✔️ Convenient</strong>
-                        </h4>
-                        <p className="sign-up-text">
-                            🌿 Choose only the jobs you want, when you want them.
-                        <p className="sign-up-text">
-                            🌿 Cancel any time.
-                        </p>
-                        </p>
-                        <h4 className="diphylleia-regular signup-subheader">
-                            <strong>✔️ Affordable</strong>
-                        </h4>
-                        <p className="sign-up-text">
-                            🌿 Pay a modest fee to utilize our platform.
-                        </p>
-                    </div>
+                    <h3 className="diphylleia-regular signup-header">
+                        <strong>Benefits of Joining...</strong>
+                    </h3>
+                    <h4 className="diphylleia-regular signup-subheader">
+                        <strong>✔️ Easy</strong>
+                    </h4>
+                    <p className="sign-up-text">
+                        🌿 Easily search and apply for jobs in your area.
+                    </p>
+                    <h4 className="diphylleia-regular signup-subheader">
+                        <strong>✔️ Convenient</strong>
+                    </h4>
+                    <p className="sign-up-text">
+                        🌿 Choose only the jobs you want, when you want them.
+                    <p className="sign-up-text">
+                        🌿 Cancel any time.
+                    </p>
+                    </p>
+                    <h4 className="diphylleia-regular signup-subheader">
+                        <strong>✔️ Affordable</strong>
+                    </h4>
+                    <p className="sign-up-text">
+                        🌿 Pay a modest fee to utilize our platform.
+                    </p>
                 </div>
             </div>
 

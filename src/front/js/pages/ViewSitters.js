@@ -5,7 +5,7 @@ import clientSignUp from "../../img/client-sign-up.png";
 import { useNavigate } from "react-router-dom";
 import "../../styles/home.css";
 import "../../styles/index.css";
-import "../../styles/viewSittersAndClients.css";
+import "../../styles/viewSittersAndJobs.css";
 
 export const ViewSitters = () => {
     const { store } = useContext(Context);
@@ -41,41 +41,39 @@ export const ViewSitters = () => {
             <div className="hero-image">
                 <img className="bkgd-img" src={clientSignUp} alt="Client Sign Up" />
                 <div className="view-sitters-text row">
-                    <div className="right-text">
-                        <h3 className="diphylleia-regular signup-header">
-                            <strong>Take comfort knowing that</strong>
-                        </h3>
-                        <h3 className="diphylleia-regular signup-header">
-                            <strong>our service is...</strong>
-                        </h3>
-                        <h4 className="diphylleia-regular signup-subheader">
-                            <strong>✔️ Safe</strong>
-                        </h4>
-                        <p className="sign-up-text">
-                            🌿 Find and hire vetted, qualified help near you.
-                        </p>
-                        <p className="sign-up-text">
-                            🌿 Background checks completed for all plant sitters.
-                        </p>
-                        <h4 className="diphylleia-regular signup-subheader">
-                            <strong>✔️ Affordable</strong>
-                        </h4>
-                        <p className="sign-up-text">
-                            🌿 Pay only $__ /month to post unlimited jobs.
-                        </p>
-                        <p className="sign-up-text">
-                            🌿 Choose your own rate per job.
-                        </p>
-                        <h4 className="diphylleia-regular signup-subheader">
-                            <strong>✔️ Convenient</strong>
-                        </h4>
-                        <p className="sign-up-text">
-                            🌿 Cancel any time.
-                        </p>
-                        <p className="sign-up-text">
-                            🌿 Hire only the help you need, when you need it.
-                        </p>
-                    </div>
+                    <h3 className="diphylleia-regular signup-header">
+                        <strong>Take comfort knowing that</strong>
+                    </h3>
+                    <h3 className="diphylleia-regular signup-header">
+                        <strong>our service is...</strong>
+                    </h3>
+                    <h4 className="diphylleia-regular signup-subheader">
+                        <strong>✔️ Safe</strong>
+                    </h4>
+                    <p className="sign-up-text">
+                        🌿 Find and hire vetted, qualified help near you.
+                    </p>
+                    <p className="sign-up-text">
+                        🌿 Background checks completed for all plant sitters.
+                    </p>
+                    <h4 className="diphylleia-regular signup-subheader">
+                        <strong>✔️ Affordable</strong>
+                    </h4>
+                    <p className="sign-up-text">
+                        🌿 Pay a small, montly fee to post unlimited jobs.
+                    </p>
+                    <p className="sign-up-text">
+                        🌿 Choose your own rate per job.
+                    </p>
+                    <h4 className="diphylleia-regular signup-subheader">
+                        <strong>✔️ Convenient</strong>
+                    </h4>
+                    <p className="sign-up-text">
+                        🌿 Cancel any time.
+                    </p>
+                    <p className="sign-up-text">
+                        🌿 Hire only the help you need, when you need it.
+                    </p>
                 </div>
             </div>
 

@@ -68,7 +68,7 @@
         font-size: 5.5vw;
     }
     
-    .available-sitters {
+    .available {
         padding: 3vh 0;
         margin: 0;
     }
@@ -77,19 +77,10 @@
         display: none;
     }
 
-    .img-text {
-        width: 100%;
+    .view-sitters-text, .view-jobs-text {
         position: unset;
-
-    }
-
-    .left-space {
-        width: 0;
-    }
-    
-    .right-text {
-        width: 90vw;
-        margin: auto;
+        padding: 4vw;
+        margin: 0;
     }
 
     .signup-header {

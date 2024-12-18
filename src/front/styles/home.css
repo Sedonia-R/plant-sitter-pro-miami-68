@@ -79,15 +79,15 @@
 }
 
 .home-button {
-  margin: auto;
-  width: 80%;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
 }
 
-.button-text{
-  margin: auto;
-  padding: 0;
-  width: 100%;
-  font-size: 2vw;
+.home-button-text {
+  font-size: 2.5vw;
+  margin: 0;
+  align-items: center;
 }
 
 .carousel-header {
@@ -128,12 +128,6 @@
   width: 30%;
   padding: 0;
   margin: 0;
-}
-
-.client-and-sitter-buttons {
-  margin: 0;
-  padding: 5px;
-  width: 100%;
 }
 
 .icon-with-text {
@@ -234,9 +228,6 @@
     padding-bottom: 5px;
   }
 
-  .home-button {
-    padding: 4px;
-  }
 
   .carousel-header {
     font-size: 4vw;
@@ -276,10 +267,6 @@
   
   .client-and-sitter-text {
     font-size: 2vw;
-  }
-
-  .client-and-sitter-buttons {
-    padding: 2px;
   }
 
 }
