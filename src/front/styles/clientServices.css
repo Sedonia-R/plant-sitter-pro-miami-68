@@ -1,0 +1,82 @@
+.client-services-container {
+    text-align: center;
+    min-height: 80vh;
+    width: 100%;
+    margin: auto;
+    padding: 4vh 0;
+}
+
+.client-services {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.scheduler {
+    background-color: rgb(70, 108, 70) !important;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.calendar {
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    padding: 1rem;
+}
+
+.start-end {
+    padding: 1rem;
+}
+
+.date-picker {
+    text-align: center;
+}
+
+.plants-and-services-background {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(70, 108, 70) !important;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.select-plants-client {
+    width: 120px;
+    height: auto;
+    padding: 5px;
+}
+
+.plants-and-services {
+    border-radius: 25px;
+    border: 3px solid white;
+    padding: 0;
+}
+
+.select-services-client {
+    width: 100px;
+    height: auto;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+     
+    .plants-and-services {
+        border-radius: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .start-end {
+        padding: 0.2rem;
+    }
+
+    .date-picker {
+        font-size: 3vw;
+        border: 2px solid black;
+        padding: 5px 0;
+    }
+}

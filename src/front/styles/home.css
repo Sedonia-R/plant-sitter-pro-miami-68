@@ -459,10 +459,7 @@
   width: auto;
 }
 
-.client-services {
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
+
 
 
 
@@ -487,32 +484,7 @@
   padding-right: 10px;
 }
 
-.plants {
-  /* width: 30%;
-  height: auto; */
-  border-radius: 25px;
-  border: 3px solid white;
-  padding: 0;
-  /* margin: auto; */
-}
 
-.scheduler {
-  background-color: rgb(70, 108, 70) !important;
-  border-radius: 25px;
-  padding: 20px;
-}
-
-.calendar {
-  width: 80%;
-}
-
-.plant-types {
-  flex-wrap: wrap;
-  /* justify-content:space-evenly; */
-  background-color: rgb(70, 108, 70) !important;
-  border-radius: 25px;
-  padding: 10px;
-}
 
 .selectPlants {
   width: 50%;
@@ -526,11 +498,6 @@
   border-radius: 25px;
 }
 
-.selectPlantsClient {
-  width: 12%;
-  height: auto;
-  padding: 5px;
-}
 
 .plantImageWrapper {
   display: flex;
@@ -562,12 +529,6 @@
   border: 2px solid white;
   padding: 8px 20px;
   margin: 10px;
-}
-
-.selectServices {
-  width: 12%;
-  height: auto;
-  padding: 5px;
 }
 
 .plantLabel {
