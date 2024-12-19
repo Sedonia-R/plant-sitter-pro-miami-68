@@ -41,7 +41,7 @@ export const Home = () => {
 								<h4 className="lp-subtext lp-subtext-last">🌿Love plants, but kill them?</h4>
 								<button
 									type="button"
-									className="btn rounded-pill home-button"
+									className="home-button"
 									onClick={
 										() => {
 											actions.clearJobPostId();
@@ -66,7 +66,7 @@ export const Home = () => {
 								<h4 className="lp-subtext lp-subtext-last">🌿Experienced with plant care?</h4>
 								<button
 									type="button"
-									className="btn rounded-pill home-button"
+									className="home-button"
 									onClick={
 										() => {
 											navigate('/provider-location')
@@ -100,7 +100,7 @@ export const Home = () => {
 						<div className="container row-button">
 							<button
 								type="button"
-								className="btn rounded-pill home-button"
+								className="home-button"
 								onClick={
 									() => {
 										actions.clearJobPostId();
@@ -142,7 +142,7 @@ export const Home = () => {
 						<div className="container col-3 row-button">
 							<button
 								type="button"
-								className="btn col-12 rounded-pill home-button"
+								className="col-12 home-button"
 								onClick={
 									() => {
 										navigate('/provider-location')

@@ -58,7 +58,7 @@ export const ContactUs = () => {
                         </div>
                         <hr/>
                         <button 
-                            className="contacts-button"
+                            className="contacts-button rounded-pill"
                             type="button"
                             onClick={
                                 () => {
@@ -102,7 +102,7 @@ export const ContactUs = () => {
                         </div>
                         <hr/>
                         <button 
-                            className="contacts-button"
+                            className="contacts-button rounded-pill"
                             type="button"
                             onClick={
                                 () => {
@@ -146,7 +146,7 @@ export const ContactUs = () => {
                         </div>
                         <hr/>
                         <button 
-                            className="contacts-button"
+                            className="contacts-button rounded-pill"
                             type="button"
                             onClick={
                                 () => {
@@ -190,7 +190,7 @@ export const ContactUs = () => {
                         </div>
                         <hr/>
                         <button 
-                            className="contacts-button"
+                            className="contacts-button rounded-pill"
                             type="button"
                             onClick={
                                 () => {
@@ -241,7 +241,7 @@ export const ContactUs = () => {
                         </div>
                             <hr/>
                             <button 
-                                className="contacts-button"
+                                className="contacts-button rounded-pill"
                                 type="button"
                                 onClick={
                                     () => {

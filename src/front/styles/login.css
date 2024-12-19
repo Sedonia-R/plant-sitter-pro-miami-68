@@ -3,3 +3,8 @@
     justify-content: center;
     height: 80vh;
 }
+
+.login-header {
+    padding-top: 3vh;
+    text-align: center;
+}

@@ -37,9 +37,9 @@ export const Navbar = () => {
         <div className="ml-auto">
           <div className="dropdown">
             <button
-              className="btn dropdown-toggle"
+              className="dropdown-toggle diphylleia-regular"
               type="button"
-              id="dropdownMenuButton1"
+              id="dropdownMenuButton"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -47,7 +47,7 @@ export const Navbar = () => {
             </button>
             <ul
               className="dropdown-menu dropdown-menu-end"
-              aria-labelledby="dropdownMenuButton1"
+              aria-labelledby="dropdownMenuButton"
             >
               <li className="navbar-dropdown-item">
                 <a className="dropdown-item" href="#" onClick={() => navigate("/")}>

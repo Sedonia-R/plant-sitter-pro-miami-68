@@ -9,7 +9,7 @@ import pestControl from "../../img/pestControl.png";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
 
-export const ProviderServices = () => {
+export const SitterServices = () => {
     const { store, actions } = useContext(Context);
     const navigate = useNavigate();
     const [servicePreferences, setServicePreferences] = useState([]);

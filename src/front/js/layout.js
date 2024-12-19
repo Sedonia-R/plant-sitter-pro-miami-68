@@ -11,7 +11,7 @@ import injectContext from "./store/appContext";
 import { SitterSignUp } from "./pages/SitterSignUp.js";
 import { Navbar } from "./component/Navbar";
 import { Footer } from "./component/Footer";
-import { ProviderServices } from "./pages/providerServices";
+import { SitterServices } from "./pages/SitterServices";
 import { ProviderProfileCompleted } from "./pages/providerProfileCompleted";
 import { ClientLocation } from "./pages/ClientLocation";
 import { ClientSubscription } from "./pages/ClientSubscription.js";
@@ -51,7 +51,7 @@ import { ProfileSuccessPage } from "./pages/profileSuccessPage";
 import { CompletedJobsPage } from "./pages/completedJobsPage";
 import { ClientServicesUpdate } from "./pages/clientServicesUpdate";
 import { Trimming } from "./pages/ExampleLoading.js";
-import { SitterSubscriptionPage } from "./pages/SitterSubscriptionPage.js";
+import { SitterSubscription } from "./pages/SitterSubscription.js";
 import { ApplicantProfiles } from "./pages/applicantProfiles.js";
 import { AboutSedonia } from "./pages/Sedonia.js";
 import { AboutCesar } from "./pages/Cesar.js";
@@ -74,7 +74,7 @@ const Layout = () => {
                         <Route element={<Home />} path="/" />
                         <Route element={<ContactUs />} path="/contact-us" />
                         <Route element={<Single />} path="/single/:theid" />
-                        <Route element={<ProviderServices />} path="/provider-services" />
+                        <Route element={<SitterServices />} path="/sitter-services" />
                         <Route element={<ClientServices1 />} path="/client-services1" />
                         <Route element={<JobPost1 />} path="/job-post" />
                         <Route element={<JobPostUpdate />} path="/job-post-update/:job_post_id" />
@@ -121,7 +121,7 @@ const Layout = () => {
                         <Route element={<AboutGerry />} path="/Gerry" />
                         <Route element={<AboutOneil />} path="/Oneil" />
                         <Route element={<AboutShafik />} path="/Shafik" />
-                        <Route element={<SitterSubscriptionPage />} path="/sitter-subscription-page" />
+                        <Route element={<SitterSubscription />} path="/sitter-subscription" />
                         <Route element={<ApplicantProfiles />} path="/applicant-profiles/:sitter_id" />
                         <Route element={<Terms />} path="/terms-and-conditions" />
                         <Route element={<h1>Not found!</h1>} />

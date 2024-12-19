@@ -18,9 +18,10 @@
   color: green;
 }
 
-#dropdownMenuButton1 {
-  font-size: 1.5vh;
-  color: white;
+#dropdownMenuButton {
+  font-size: 1.8vh;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 .dropdown-item, li {
@@ -55,7 +56,6 @@ li:hover {
   #dropdownMenuButton1 {
     font-size: 3.5vw;
     padding: 2px 4px;
-    color: white;
   }
 
   .dropdown-item, li {

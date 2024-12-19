@@ -86,7 +86,7 @@
     font-size: 1.5vw;
     margin: 0 auto;
     display: flex;
-    padding: 0.6vw;
+    padding: 0.6vw 2vw;
     border: 1px solid green;
 }
 

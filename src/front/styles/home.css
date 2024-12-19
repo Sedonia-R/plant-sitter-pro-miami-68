@@ -675,21 +675,6 @@
   height: 100px;
 }
 
-.subscription {
-  height: 300px;
-  width:400px;
-  border-radius: 25px;
-  padding: 5px;
-  background-color: blanchedalmond;
-  border: 2px solid rgb(70, 108, 70);
-  text-align: center;
-}
-
-.plant {
-  height: 100px;
-  width: auto;
-  margin-bottom: 10px;
-}
 
 /* Customize the label (the container) */
 .checkbx {
@@ -782,11 +767,11 @@
 .bottomRow {
   margin-bottom: 30px;
 }
-
+/* 
 .btn{
   background-color: rgb(70, 108, 70);
   color: white;
-}
+} */
 
 .edit {
   width:auto;

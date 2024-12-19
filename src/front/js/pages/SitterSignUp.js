@@ -1,9 +1,8 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
-import "../../styles/handleSubmit.css"
+// import "../../styles/handleSubmit.css"
 import "../../styles/index.css";
 
 export const SitterSignUp = () => {
@@ -37,24 +36,24 @@ export const SitterSignUp = () => {
         if (password === confirmPassword) {
             const result = await actions.signup(email, password, phone, firstName, lastName, addressLine1, addressLine2, city, state, country, zipCode);
             if (result.success) {
-                setShowModal(true); // Show modal on success;
+                setShowModal(true);
             } else {
                 alert(result.error || "Sign-up failed. Please try again.");
             }
         } else {
-            alert("Passwords Do Not MATCHH!!");
+            alert("Passwords Do Not Match");
         }
 
     };
 
     const handleCloseModal = () => {
         setShowModal(false);
-        navigate('/provider-services'); // Redirect to account settings after closing modal
+        navigate('/sitter-services');
     };
 
     return (
         <div className="row justify-content-center">
-            <div className="col-lg-6 bg-indigo">
+            <div className="col-lg-6">
                 <h1 className="fw-normal mb-1 mt-4 diphylleia-regular jobs">Create an account</h1>
 
                 <div className="text-center mt-2 mb-4">
@@ -280,11 +279,10 @@ export const SitterSignUp = () => {
                             I do accept the <a href="#!" className=""><u>Terms and Conditions</u></a> of your site.
                         </label>
                     </div>
-
                     <div className="d-flex justify-content-center">
                         <button
                             type="submit"
-                            className="btn btn-success mb-5 col-5 rounded-pill"
+                            className="btn rounded-pill"
                         >
                             Register
                         </button>

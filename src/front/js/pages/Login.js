@@ -3,7 +3,7 @@ import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
 import "../../styles/login.css";
-import "../../styles/handleSubmit.css"
+// import "../../styles/handleSubmit.css"
 
 export const Login = () => {
   const { actions } = useContext(Context);
@@ -30,7 +30,7 @@ export const Login = () => {
   return (
     <div className="row login-container" onKeyDown={handleKeyDown}>
       <div className="col-10">
-        <h1 className="fw-normal mt-5 diphylleia-regular jobs">
+        <h1 className="login-header diphylleia-regular">
           Log in to your account
         </h1>
         <p className="text-center mt-2 mb-5">
@@ -86,7 +86,7 @@ export const Login = () => {
         <div className="d-flex justify-content-center">
           <button
             type="button"
-            className="btn btn-success mb-3 col-5 rounded-pill"
+            className="rounded-pill"
             onClick={handleLogin}
             onKeyDown={handleKeyDown}
           >
