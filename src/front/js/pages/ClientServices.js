@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from "react"; 
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import succulents from "../../img/succulents.jpg";
@@ -19,8 +18,9 @@ import pestControl from "../../img/pestControl.png";
 import border from "../../img/border.png";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
+import "../../styles/servicesPages.css";
 
-export const ClientServices1 = () => {
+export const ClientServices = () => {
     const { store, actions } = useContext(Context);
     const navigate = useNavigate();
 
@@ -82,7 +82,7 @@ export const ClientServices1 = () => {
                     </div>
                 </div>
                 <p></p>
-                <img className="divider m-auto" src={border} alt="divider" />
+                <img className="divider" src={border} alt="divider" />
                 <h3 className="diphylleia-regular mt-4"><strong>What kind of plants do you have that need care?</strong></h3>
                 <div className="d-flex plant-types justify-content-center">
                     {[
@@ -105,7 +105,7 @@ export const ClientServices1 = () => {
                         </div>
                     ))}
                 </div>
-                <img className="divider m-auto" src={border} alt="divider" />
+                <img className="divider" src={border} alt="divider" />
                 <h3 className="diphylleia-regular mt-4"><strong>What kind of services do you need?</strong></h3>
                 <div className="d-flex justify-content-center plant-types">
                     {[
@@ -125,7 +125,7 @@ export const ClientServices1 = () => {
                         </div>
                     ))}
                 </div>
-                <img className="divider m-auto" src={border} alt="divider" />
+                <img className="divider" src={border} alt="divider" />
                 <div className="container row mt-1 mb-5">
                     <button
                         className="btn btn-success m-auto col-2 rounded-pill"

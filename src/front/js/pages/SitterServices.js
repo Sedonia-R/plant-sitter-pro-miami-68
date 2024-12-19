@@ -8,6 +8,7 @@ import repotting from "../../img/repotting.png";
 import pestControl from "../../img/pestControl.png";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
+import "../../styles/servicesPages.css";
 
 export const SitterServices = () => {
     const { store, actions } = useContext(Context);

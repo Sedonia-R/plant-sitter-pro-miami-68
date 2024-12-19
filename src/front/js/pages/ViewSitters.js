@@ -14,7 +14,7 @@ export const ViewSitters = () => {
 
     const handleButtonClick = () => {
         if (store.token) {
-            navigate("/client-services1");
+            navigate("/client-services");
         } else {
             navigate("/client-subscription");
         }

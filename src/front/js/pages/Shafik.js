@@ -34,12 +34,12 @@ export const AboutShafik = () => {
                     <div className="contact-me-header diphylleia-regular">Contact Me: </div>
                     <i className="fa-regular fa-envelope"/>
                 </a>
-                <div className="divider">|</div>
+                <div className="pipe">|</div>
                 <a className="contact-ico" href="https://www.linkedin.com/in/shafikbahou/">
                     <div className="contact-me-header diphylleia-regular">Linkedin:</div>
                     <i className="fa-brands fa-linkedin"/>
                 </a>
-                <div className="divider">|</div>
+                <div className="pipe">|</div>
                 <div className="popup-wrap">
                     {/* <div className="contact-me-header diphylleia-regular">GitHub:</div> */}
                     <img 

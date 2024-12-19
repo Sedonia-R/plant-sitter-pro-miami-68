@@ -41,12 +41,12 @@ export const AboutSedonia = () => {
                     <div className="contact-me-header diphylleia-regular">Email:</div>
                     <i className="fa-regular fa-envelope"/>
                 </a>
-                <div className="divider">|</div>
+                <div className="pipe">|</div>
                 <a className="contact-ico" target="_blank" href="https://www.linkedin.com/in/sedoniaraethstein">
                     <div className="contact-me-header diphylleia-regular">Linkedin:</div>
                     <i className="fa-brands fa-linkedin"/>
                 </a>
-                <div className="divider">|</div>
+                <div className="pipe">|</div>
                 <a className="contact-ico" target="_blank" href="https://github.com/Sedonia-R">
                     <div className="contact-me-header diphylleia-regular">GitHub:</div>
                     <i className="fa-brands fa-github"/>

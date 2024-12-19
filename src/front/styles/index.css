@@ -32,3 +32,18 @@ button:active, button:hover {
 button:focus {
     outline: none; /*removes focus ring */
 }
+
+.divider {
+    margin: auto;
+    height: 3rem;
+    width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .divider {
+      height: 2rem;
+      width: auto;
+    }
+  
+}

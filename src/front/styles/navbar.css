@@ -38,7 +38,7 @@ li:hover {
 
 @media only screen and (max-width: 600px) {
   .navbar {
-    height: 14vh;
+    height: 12vh;
   }
 
   .navbar-banner {
@@ -46,16 +46,16 @@ li:hover {
   }
   
   .logo {
-    max-height: 11vh;
+    max-height: 9vh;
   }
 
   .example-only {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   
-  #dropdownMenuButton1 {
-    font-size: 3.5vw;
-    padding: 2px 4px;
+  #dropdownMenuButton {
+    font-size: 3vw;
+    padding: 1px 8px;
   }
 
   .dropdown-item, li {

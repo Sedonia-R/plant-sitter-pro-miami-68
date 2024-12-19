@@ -2,11 +2,6 @@
   font-size: 3rem;
 }
 
-.divider {
-  height: 3rem;
-  width: auto;
-}
-
 .article {
   padding: 20px;
 }
@@ -28,13 +23,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  
   .blog-header {
     font-size: 2rem;
-  }
-  
-  .divider {
-    height: 2rem;
-    width: auto;
   }
 
 }

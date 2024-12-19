@@ -24,7 +24,7 @@ export const ClientSubscription = () => {
 						type="button"
 						onClick={
 							() => {
-								navigate('/client-signup')
+								navigate('/client-services')
 							}
 						}
 					>

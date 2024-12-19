@@ -16,7 +16,7 @@ import { ProviderProfileCompleted } from "./pages/providerProfileCompleted";
 import { ClientLocation } from "./pages/ClientLocation";
 import { ClientSubscription } from "./pages/ClientSubscription.js";
 import { ClientSignUp } from "./pages/ClientSignUp.js";
-import { ClientServices1 } from "./pages/clientServices1";
+import { ClientServices } from "./pages/ClientServices";
 import { JobPost1 } from "./pages/jobPost";
 import { JobPost2 } from "./pages/jobPostPreview";
 import { JobPostUpdate } from "./pages/JobPostUpdate";
@@ -75,7 +75,7 @@ const Layout = () => {
                         <Route element={<ContactUs />} path="/contact-us" />
                         <Route element={<Single />} path="/single/:theid" />
                         <Route element={<SitterServices />} path="/sitter-services" />
-                        <Route element={<ClientServices1 />} path="/client-services1" />
+                        <Route element={<ClientServices />} path="/client-services" />
                         <Route element={<JobPost1 />} path="/job-post" />
                         <Route element={<JobPostUpdate />} path="/job-post-update/:job_post_id" />
                         <Route element={<ClientServicesUpdate />} path="/client-services-update/:job_post_id" />
