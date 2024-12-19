@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import watering from "../../img/watering.png";
 import cleaning from "../../img/cleaning.png";
 import pruning from "../../img/pruning.png";
@@ -8,7 +7,7 @@ import repotting from "../../img/repotting.png";
 import pestControl from "../../img/pestControl.png";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
-// import "../../styles/servicesPages.css";
+import "../../styles/sitterServices.css";
 
 export const SitterServices = () => {
     const { store, actions } = useContext(Context);
@@ -89,74 +88,75 @@ export const SitterServices = () => {
     };
 
     return (
-        <div className="text-center m-5">
-            <h1 className="diphylleia-regular">Welcome to the Plant Care Pro Team! <i className="fa-solid fa-leaf"></i></h1>
-            <h3 className="diphylleia-regular"><strong>What kind of services can you provide?</strong></h3>
+        <div className="sitter-services-container">
+            <h1 className="diphylleia-regular sitter-header">Welcome to the Plant Care Pro Team! <i className="fa-solid fa-leaf"></i></h1>
+            <h3 className="diphylleia-regular mt-4">What kind of services can you provide?</h3>
             <h5 className="mt-3">Select all that apply</h5>
-
-            <div className="row justify-content-center topRow">
-                <label className="checkbx col-5">
-                    <img className="icon" src={watering}/>
-                    Watering
-                    <input 
-                        type="checkbox" 
-                        onChange={() => handleCheckboxChange('watering')} 
-                        checked={isServiceChecked('watering')}
-                    />
-                    <span className="checkmark"></span>
-                </label>
-            </div>
-            <div className="row justify-content-center">
-                <label className="checkbx col-5">
-                    <img className="icon" src={repotting}/>
-                    Repotting
-                    <input 
-                        type="checkbox" 
-                        onChange={() => handleCheckboxChange('repotting')} 
-                        checked={isServiceChecked('repotting')}
-                    />
-                    <span className="checkmark"></span>
-                </label>
-            </div>
-            <div className="row justify-content-center">
-                <label className="checkbx col-5">
-                    <img className="icon" src={pruning}/>
-                    Pruning
-                    <input 
-                        type="checkbox" 
-                        onChange={() => handleCheckboxChange('pruning')} 
-                        checked={isServiceChecked('pruning')}
-                    />
-                    <span className="checkmark"></span>
-                </label>
-            </div>
-            <div className="row justify-content-center">
-                <label className="checkbx col-5">
-                    <img className="icon" src={pestControl}/>
-                    Pest Control
-                    <input 
-                        type="checkbox" 
-                        onChange={() => handleCheckboxChange('pestControl')} 
-                        checked={isServiceChecked('pestControl')}
-                    />
-                    <span className="checkmark"></span>
-                </label>
-            </div>
-            <div className="row justify-content-center">
-                <label className="checkbx col-5">
-                    <img className="icon" src={cleaning}/>
-                    Cleaning
-                    <input 
-                        type="checkbox" 
-                        onChange={() => handleCheckboxChange('cleaning')} 
-                        checked={isServiceChecked('cleaning')}
-                    />
-                    <span className="checkmark"></span>
-                </label>
+            <div className="services-container">
+                <div className="service">
+                    <label className="checkbx">
+                        <img className="icon" src={watering}/>
+                        Watering
+                        <input 
+                            type="checkbox" 
+                            onChange={() => handleCheckboxChange('watering')} 
+                            checked={isServiceChecked('watering')}
+                        />
+                        <span className="checkmark"></span>
+                    </label>
+                </div>
+                <div className="service">
+                    <label className="checkbx">
+                        <img className="icon" src={repotting}/>
+                        Repotting
+                        <input 
+                            type="checkbox" 
+                            onChange={() => handleCheckboxChange('repotting')} 
+                            checked={isServiceChecked('repotting')}
+                        />
+                        <span className="checkmark"></span>
+                    </label>
+                </div>
+                <div className="service">
+                    <label className="checkbx">
+                        <img className="icon" src={pruning}/>
+                        Pruning
+                        <input 
+                            type="checkbox" 
+                            onChange={() => handleCheckboxChange('pruning')} 
+                            checked={isServiceChecked('pruning')}
+                        />
+                        <span className="checkmark"></span>
+                    </label>
+                </div>
+                <div className="service">
+                    <label className="checkbx">
+                        <img className="icon" src={pestControl}/>
+                        Pest Control
+                        <input 
+                            type="checkbox" 
+                            onChange={() => handleCheckboxChange('pestControl')} 
+                            checked={isServiceChecked('pestControl')}
+                        />
+                        <span className="checkmark"></span>
+                    </label>
+                </div>
+                <div className="service">
+                    <label className="checkbx">
+                        <img className="icon" src={cleaning}/>
+                        Cleaning
+                        <input 
+                            type="checkbox" 
+                            onChange={() => handleCheckboxChange('cleaning')} 
+                            checked={isServiceChecked('cleaning')}
+                        />
+                        <span className="checkmark"></span>
+                    </label>
+                </div>
             </div>
             <button 
                 type="submit" 
-                className="btn btn-success mb-5 col-5 rounded-pill"
+                className="sitter-next-button"
                 onClick={handleSubmit}
             >
                 Next
