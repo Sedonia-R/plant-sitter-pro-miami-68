@@ -276,7 +276,7 @@ export const ClientSignUp = () => {
                             id="terms"
                         />
                         <label className="form-check-label" htmlFor="terms">
-                            I do accept the <a href="#!" className=""><u>Terms and Conditions</u></a>.
+                            I do accept the <span className="terms-link" onClick={(e) => navigate('/terms-and-conditions')}>Terms and Conditions</span>.
                         </label>
                     </div>
 

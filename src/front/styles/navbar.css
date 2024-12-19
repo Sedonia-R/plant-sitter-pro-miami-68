@@ -15,11 +15,11 @@
 
 .example-only {
   font-size: 3vw;
-  color: green;
+  color: rgb(70, 108, 70);
 }
 
 #dropdownMenuButton {
-  font-size: 1.8vh;
+  font-size: 1.5vh;
   border-radius: 20px;
   font-weight: bold;
 }
