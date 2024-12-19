@@ -22,7 +22,6 @@ export const ClientSubscription = () => {
 				<div>
 					<button
 						type="button"
-						className="btn btn-success mb-3 col-6 rounded-pill"
 						onClick={
 							() => {
 								navigate('/client-signup')

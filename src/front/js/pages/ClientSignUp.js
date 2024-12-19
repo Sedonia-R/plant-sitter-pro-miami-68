@@ -3,8 +3,8 @@ import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
-// import "../../styles/handleSubmit.css"
 import "../../styles/index.css";
+import "../../styles/signUp.css";
 
 export const ClientSignUp = () => {
     const [firstName, setFirstName] = useState("");
@@ -54,13 +54,11 @@ export const ClientSignUp = () => {
 
     return (
         <div className="row justify-content-center">
-            <div className="col-lg-6 bg-indigo">
-                <h1 className="fw-normal mb-1 mt-4 diphylleia-regular jobs">Create an account</h1>
-
+            <div className="form-container">
+                <h1 className="diphylleia-regular sign-up-header">Create an account</h1>
                 <div className="text-center mt-2 mb-4">
                     <p>Already have an account? <a href="/login"><u>Log in</u></a></p>
                 </div>
-
                 <form onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-md-6 mb-2 pb-2">
@@ -68,7 +66,7 @@ export const ClientSignUp = () => {
                                 <input
                                     type="text"
                                     id="firstName"
-                                    className="form-control form-control-lg"
+                                    className="form-control"
                                     value={firstName}
                                     onChange={(e) => setFirstName(e.target.value)}
                                 />
@@ -80,7 +78,7 @@ export const ClientSignUp = () => {
                                 <input
                                     type="text"
                                     id="lastName"
-                                    className="form-control form-control-lg"
+                                    className="form-control"
                                     value={lastName}
                                     onChange={(e) => setLastName(e.target.value)}
                                 />
@@ -94,7 +92,7 @@ export const ClientSignUp = () => {
                             <input
                                 type="text"
                                 id="addressLine1"
-                                className="form-control form-control-lg"
+                                className="form-control"
                                 value={addressLine1}
                                 onChange={(e) => setAddressLine1(e.target.value)}
                             />
@@ -107,7 +105,7 @@ export const ClientSignUp = () => {
                             <input
                                 type="text"
                                 id="addressLine2"
-                                className="form-control form-control-lg"
+                                className="form-control"
                                 value={addressLine2}
                                 onChange={(e) => setAddressLine2(e.target.value)}
                             />
@@ -121,7 +119,7 @@ export const ClientSignUp = () => {
                                 <input
                                     type="text"
                                     id="city"
-                                    className="form-control form-control-lg"
+                                    className="form-control"
                                     value={city}
                                     onChange={(e) => setCity(e.target.value)}
                                 />
@@ -131,7 +129,7 @@ export const ClientSignUp = () => {
 
                         <div className="col-md-3 mb-2 pb-2">
                             <div data-mdb-input-init className="form-outline form-white">
-                                <select className="form-select form-select-lg mb-2" aria-label="Default select example" for="state" value={state}
+                                <select className="form-select select-state" aria-label="Default select example" for="state" value={state}
                                     onChange={(e) => setState(e.target.value)}>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -185,6 +183,7 @@ export const ClientSignUp = () => {
                                     <option value="WY">Wyoming</option>
                                     <option value="PR">Puerto Rico</option>
                                 </select>
+                                <label className="form-label" htmlFor="state">State</label>
                             </div>
                         </div>
 
@@ -193,7 +192,7 @@ export const ClientSignUp = () => {
                                 <input
                                     type="text"
                                     id="zipCode"
-                                    className="form-control form-control-lg"
+                                    className="form-control"
                                     value={zipCode}
                                     onChange={(e) => setZipCode(e.target.value)}
                                 />
@@ -222,7 +221,7 @@ export const ClientSignUp = () => {
                             <input
                                 type="tel"
                                 id="phone"
-                                className="form-control form-control-lg"
+                                className="form-control"
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
                             />
@@ -235,7 +234,7 @@ export const ClientSignUp = () => {
                             <input
                                 type="text"
                                 id="email"
-                                className="form-control form-control-lg"
+                                className="form-control"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
@@ -248,7 +247,7 @@ export const ClientSignUp = () => {
                             <input
                                 type="password"
                                 id="password"
-                                className="form-control form-control-lg"
+                                className="form-control"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
@@ -260,7 +259,7 @@ export const ClientSignUp = () => {
                             <input
                                 type="password"
                                 id="confirmPassword"
-                                className="form-control form-control-lg"
+                                className="form-control"
                                 value={confirmPassword}
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                             />
@@ -277,14 +276,14 @@ export const ClientSignUp = () => {
                             id="terms"
                         />
                         <label className="form-check-label" htmlFor="terms">
-                            I do accept the <a href="#!" className=""><u>Terms and Conditions</u></a> of your site.
+                            I do accept the <a href="#!" className=""><u>Terms and Conditions</u></a>.
                         </label>
                     </div>
 
                     <div className="d-flex justify-content-center">
                         <button
                             type="submit"
-                            className="btn btn-success mb-5 col-5 rounded-pill"
+                            className="w-50"
                         >
                             Register
                         </button>

@@ -79,7 +79,7 @@ export const ViewSitters = () => {
 
             <button
                 type="button"
-                className="btn subscribe rounded-pill"
+                className="subscribe"
                 onClick={handleButtonClick}
             >
                 <h3 className="diphylleia-regular button-text">

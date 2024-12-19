@@ -95,7 +95,7 @@ export const ViewJobs = () => {
 
             <button
                 type="submit"
-                className="btn subscribe rounded-pill"
+                className="subscribe"
                 onClick={() => navigate('/sitter-subscription')}
             >
                 <h3 className="diphylleia-regular button-text">
