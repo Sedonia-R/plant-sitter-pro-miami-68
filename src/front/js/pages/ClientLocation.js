@@ -45,7 +45,7 @@ export const ClientLocation = () => {
             </form>
             <button
                 type="button"
-                className="btn btn-success mt-3 col-2 rounded-pill"
+                className="location-button"
                 onClick={handleSearch}
             >
                 Next

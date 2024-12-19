@@ -6,7 +6,7 @@ import { Home } from "./pages/Home.js";
 import { ContactUs } from "./pages/ContactUs";
 import { Single } from "./pages/single";
 import { ProviderProfile } from "./pages/providerProfile";
-import { ProviderLocation } from "./pages/ProviderLocation.js";
+import { SitterLocation } from "./pages/SitterLocation.js";
 import injectContext from "./store/appContext";
 import { SitterSignUp } from "./pages/SitterSignUp.js";
 import { Navbar } from "./component/Navbar";
@@ -82,7 +82,7 @@ const Layout = () => {
                         <Route element={<JobPost2 />} path="/job-post-preview/:job_post_id" />
                         <Route element={<ProviderProfile />} path="/provider-profile" />
                         <Route element={<ProviderProfileCompleted />} path="/provider-profile-completed" />
-                        <Route element={<ProviderLocation />} path="/provider-location" />
+                        <Route element={<SitterLocation />} path="/sitter-location" />
                         <Route element={<ClientLocation />} path="/client-location" />
                         <Route element={<ViewSitters />} path="/view-sitters" />
                         <Route element={<ClientSubscription />} path="/client-subscription" />

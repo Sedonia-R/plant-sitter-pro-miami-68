@@ -69,7 +69,7 @@ export const Home = () => {
 									className="home-button"
 									onClick={
 										() => {
-											navigate('/provider-location')
+											navigate('/sitter-location')
 										}
 									}
 								>
@@ -145,7 +145,7 @@ export const Home = () => {
 								className="col-12 home-button"
 								onClick={
 									() => {
-										navigate('/provider-location')
+										navigate('/sitter-location')
 									}
 								}
 							>

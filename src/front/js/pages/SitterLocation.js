@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
 import "../../styles/locationPages.css";
 
-export const ProviderLocation = () => {
+export const SitterLocation = () => {
     const { store, actions } = useContext(Context);
     const navigate = useNavigate();
     const [zipCode, setZipCode] = useState("");
@@ -58,7 +58,7 @@ export const ProviderLocation = () => {
             </div>
             <button
                 type="button"
-                className="btn btn-success location-button rounded-pill"
+                className="location-button"
                 onClick={handleSearch}
             >
                 Next
