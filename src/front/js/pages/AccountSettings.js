@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Context } from "./../store/appContext";
+import { Context } from "../store/appContext";
 import BushTrimmingLoader from "../component/BushTrimmingLoader";
 import "../../styles/index.css";
 import './../../styles/accountSettings.css';
@@ -39,7 +39,7 @@ const AccountSettings = () => {
     return (
         <div className="account-settings-container">
             {store.user ? (
-                <>
+                <div>
                     <header className="account-header">
                         <h2>{store.user.first_name} {store.user.last_name}</h2>
                         <p>{store.user.email}</p>
@@ -53,9 +53,15 @@ const AccountSettings = () => {
                         ))}
                     </div>
                     <footer className="account-footer">
-                        <p>Need to delete your account? <a href="#" onClick={handleDeleteAccount} className="delete-account-link">Take care of that now</a></p>
+                        <div>Need to delete your account?</div>
+                        <div
+                            onClick={handleDeleteAccount}
+                            className="delete-account-link"
+                        >
+                            <span> Take care of that now</span>
+                        </div>
                     </footer>
-                </>
+                </div>
             ) : (
                 <BushTrimmingLoader />
             )}

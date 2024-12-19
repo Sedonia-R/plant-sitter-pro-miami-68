@@ -36,27 +36,49 @@
     color: white;
 }
 
-.settings-card h3 {
+.settings-card > h3 {
     margin-bottom: 10px;
     font-size: 18px;
 }
 
-.settings-card p {
+.settings-card > p {
     font-size: 14px;
     color: inherit;
 }
 
 .account-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
     margin-top: 20px;
-    font-size: 14px;
-}
-
-.account-footer a {
-    color: rgb(70,108,70);
-    text-decoration: none;
+    font-size: 15px;
+    width: auto;
 }
 
 .account-footer a:hover {
     text-decoration: underline;
+}
+
+.delete-account-link {
+    color: blue;
+    text-decoration: underline;
+    padding: 0 5px;
+}
+
+.delete-account-link:hover {
+    cursor: pointer;
+    color: green;
+}
+
+@media only screen and (min-width: 900px) {
+    .account-settings-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .account-footer {
+        font-size: 20px;
+    }
 }

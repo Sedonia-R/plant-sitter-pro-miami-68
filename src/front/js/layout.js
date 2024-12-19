@@ -24,7 +24,7 @@ import { SignUp } from "./pages/SignUp";
 import { Login } from "./pages/Login.js";
 import { ViewJobs } from "./pages/ViewJobs.js";
 import { Blog } from "./pages/Blog";
-import AccountSettings from "./pages/account"
+import AccountSettings from "./pages/AccountSettings.js"
 import { PersonalInfo } from "./pages/PersonalInfo"
 import PersonalSecurity from "./pages/loginsecurity"
 import PaymentsPayouts from "./pages/payments-payouts"
