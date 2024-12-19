@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import '../../styles/BushTrimmingLoader.css';
+import '../../styles/bushTrimmingLoader.css';
 
 const BushTrimmingLoader = () => {
-  // Optional: You can add an event listener here to trigger the shake animation manually
   useEffect(() => {
     const tree = document.querySelector('.tree');
 
