@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Context } from "./../store/appContext";
-import './../../styles/AccountSettings.css';
 import BushTrimmingLoader from "../component/BushTrimmingLoader";
 import "../../styles/index.css";
+import './../../styles/accountSettings.css';
 
 
 const AccountSettings = () => {
@@ -37,7 +37,7 @@ const AccountSettings = () => {
     };
 
     return (
-        <div className="account-settings">
+        <div className="account-settings-container">
             {store.user ? (
                 <>
                     <header className="account-header">
