@@ -21,24 +21,26 @@
 
 .posts-row {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .upload-job {
     border: 3px solid darkgrey;
     border-radius: 15%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     opacity: 100;
     transition: opacity 0.3s ease;
     color: #ccc;
     background-color: rgb(238, 238, 238);
-    margin: 0 !important;
+    margin: 4vh auto;
 }
 
 .plus-sign {
     position: relative;
-    top: 16%;
-    left: 22%;
+    top: 1%;
+    left: 7%;
 }
   
 .upload-job:hover {
@@ -51,10 +53,28 @@
     background-color: rgb(70, 108, 70);
     color: rgb(251, 251, 243);
 }
+
+.job-cards {
+    padding: 10px;
+    width: 33%;
+}
   
 .job-cards:hover {
     background-color: rgb(251, 251, 243);
     cursor: pointer;
+}
+
+.card-img-top {
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.job-post-card-title {
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -64,7 +84,8 @@
     }
 
     .plus-sign {
-        left: 20%;
-        font-size: 3rem;
+        top: 4%;
+        left: 12%;
+        font-size: 4rem;
     }
 }

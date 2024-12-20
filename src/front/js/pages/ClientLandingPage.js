@@ -72,7 +72,16 @@ export const ClientLandingPage = () => {
                 >
                     <strong>View Current / Published Jobs</strong>
                 </h3>
-                <h3 className="diphylleia-regular mb-5 text-center"><strong>Edit Your Open Job Posts</strong></h3 >
+                <h3 className="diphylleia-regular mb-3 text-center"><strong>Edit Your Open Job Posts</strong></h3 >
+                <div
+                    className="upload-job"
+                    onClick={() => {
+                        actions.clearJobPostId();
+                        navigate("/client-services")}
+                    }
+                >
+                    <i className="fa fa-plus fa-6x plus-sign"></i>
+                </div>
                 <div className="posts-row">
                     {jobPosts.map((post) => (
                         <div className="job-cards" key={post.id} onClick={() => handleViewJobPost(post.id)}>
@@ -81,31 +90,22 @@ export const ClientLandingPage = () => {
                                     src={post.profile_picture_url || noImage}
                                     alt="Job Profile Picture"
                                     className="card-img-top"
-                                    style={{ borderRadius: "25px", width: "90%", height: "375px", objectFit: "cover", margin: "auto", marginTop: "20px" }}
                                 />
                                 <div className="card-body">
-                                    <h3 className="card-title text-white diphylleia-regular fs-2">
+                                    <div className="job-post-card-title text-white diphylleia-regular">
                                         <strong>{post.first_name} {post.last_name}</strong>
-                                    </h3>
-                                    <div className="card-text text-white fs-5">
+                                    </div>
+                                    <div className="card-text text-white">
                                         <strong>Job Address:</strong> {post.location || 'Location not provided'}
                                     </div>
-                                    <div className="card-text text-white fs-5">
+                                    <div className="card-text text-white">
                                         <strong>Dates:</strong> {formatDate(post.start_date)} - {formatDate(post.end_date)}
                                     </div>
                                 </div>
                             </div>
                         </div>
                     ))}
-                    <div
-                        className="upload-job"
-                        onClick={() => {
-                            actions.clearJobPostId();
-                            navigate("/client-services")}
-                        }
-                    >
-                        <i className="fa fa-plus fa-6x plus-sign"></i>
-                    </div>
+
                 </div>
                 <div className="container mt-3">
                     <h3 

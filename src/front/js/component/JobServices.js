@@ -5,8 +5,9 @@ import cleaning from "../../img/cleaning.png";
 import pruning from "../../img/pruning.png";
 import repotting from "../../img/repotting.png";
 import pestControl from "../../img/pestControl.png";
-import ShovelAnimation from './ShovelAnimation';
+// import ShovelAnimation from './ShovelAnimation';
 import "../../styles/index.css";
+import "../../styles/jobServices.css";
 
 export const JobServices = () => {
     const { store, actions } = useContext(Context);
@@ -27,9 +28,9 @@ export const JobServices = () => {
         fetchData();
     }, []);
 
-    if (loading) {
-        return <ShovelAnimation />;
-    }
+    // if (loading) {
+    //     return <ShovelAnimation />;
+    // }
 
     return (
         <div className="container plantImageWrapper p-0">   

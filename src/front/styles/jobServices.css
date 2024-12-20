@@ -1,0 +1,23 @@
+
+.selectPlants {
+    width: 50%;
+    height: auto;
+    padding: 5px;
+}
+
+.selectPlantsCompleted {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.plantImageWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plantImageContainer {
+    position:relative;
+    display:inline-block;
+    text-align:center;
+}

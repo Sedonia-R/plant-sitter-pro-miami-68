@@ -8,7 +8,7 @@ import usual from "../../img/usual.jpg";
 import landscape from "../../img/landscape.jpg";
 import outdoors from "../../img/outdoors.jpg";
 import veggies from "../../img/veggies.jpg";
-import ShovelAnimation from './ShovelAnimation';
+// import ShovelAnimation from './ShovelAnimation';
 import "../../styles/index.css";
 
 
@@ -17,7 +17,6 @@ export const JobPlants = () => {
     const [loading, setLoading] = useState(true);
     const chosenPlants = [store.jobPostDetails.selectedPlants];
     const chosenPlantsArray = chosenPlants[0];
-
 
     useEffect(() => {
         const fetchData = async () => {
@@ -32,9 +31,9 @@ export const JobPlants = () => {
         fetchData();
     }, []);
 
-    if (loading) {
-        return <ShovelAnimation />;
-    }
+    // if (loading) {
+    //     return <ShovelAnimation />;
+    // }
 
     return (
         <div className="container plantImageWrapper p-0">   
