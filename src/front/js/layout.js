@@ -27,7 +27,7 @@ import { Blog } from "./pages/Blog";
 import AccountSettings from "./pages/AccountSettings.js"
 import { PersonalInfo } from "./pages/PersonalInfo"
 import PersonalSecurity from "./pages/loginsecurity"
-import PaymentsPayouts from "./pages/payments-payouts"
+import PaymentsPayouts from "./pages/PaymentsPayouts.js"
 import { JobPostsList } from "./pages/JobPostsList"
 import WateringService from "./pages/WateringService";
 import RepottingService from "./pages/RepottingService";

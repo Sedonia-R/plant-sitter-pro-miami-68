@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/index.css";
+import "../../styles/paymentsPayouts.css";
 
 const Payouts = () => {
   const handlePayout = async () => {
@@ -12,7 +13,7 @@ const Payouts = () => {
         "Authorization": `Bearer ${token}`,
       },
       body: JSON.stringify({
-        // providerId: "provider_stripe_account_id", // Replace with actual Stripe Account ID
+        providerId: "provider_stripe_account_id", // Replace with actual Stripe Account ID
         amount: 100, // Payout amount in cents
       }),
     });
@@ -26,8 +27,13 @@ const Payouts = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center mb-5 pb-5">
-      <button onClick={handlePayout}>Receive Payout</button>
+    <div className="payout-container">
+      <button 
+        onClick={handlePayout}
+        className="payout-button"
+      >
+        Receive Payout
+      </button>
     </div>
   );
 };

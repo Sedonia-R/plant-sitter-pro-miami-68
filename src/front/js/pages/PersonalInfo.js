@@ -1,9 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
-import { Modal, Button } from "react-bootstrap";
-import './../../styles/PersonalInfo.css';
-// import '../../styles/handleSubmit.css';
+import './../../styles/personalInfo.css';
 import "../../styles/index.css";
 
 export const PersonalInfo = () => {
@@ -75,42 +73,51 @@ export const PersonalInfo = () => {
     return (
         <div className="personal-info-container">
             <div className="breadcrumbs">
-                <a href="#" onClick={() => navigate('/account-settings')}>Account</a> &gt; <span>Personal Information</span>
+                <span 
+                    className="personal-info-parent"
+                    onClick={() => navigate('/account-settings')}
+                >
+                    Account
+                </span> 
+                <span className="child-indicator">&gt;</span>
+                <span>
+                    Personal Information
+                </span>
             </div>
             <h2 className="header">Personal Information</h2>
             {error && <p className="error-message">{error}</p>}
             <form className="personal-info-form" onSubmit={handleSubmit}>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>Email</label>
                     <input type="text" name="email" value={formData.email} onChange={handleChange} />
                 </div>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>Phone Number</label>
                     <input type="text" name="phone" value={formData.phone} onChange={handleChange} />
                 </div>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>First Name</label>
                     <input type="text" name="first_name" value={formData.first_name} onChange={handleChange} />
                 </div>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>Last Name</label>
                     <input type="text" name="last_name" value={formData.last_name} onChange={handleChange} />
                 </div>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>Address Line 1</label>
                     <input type="text" name="address_line_1" value={formData.address_line_1} onChange={handleChange} />
                 </div>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>Address Line 2</label>
                     <input type="text" name="address_line_2" value={formData.address_line_2} onChange={handleChange} />
                 </div>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>City</label>
                     <input type="text" name="city" value={formData.city} onChange={handleChange} />
                 </div>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>State</label>
-                    <select className="form-select form-select-lg mb-2" aria-label="Default select example" value={formData.state}
+                    <select className="form-select" aria-label="Default select example" value={formData.state}
                         name= "state" onChange={handleChange}>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -165,15 +172,15 @@ export const PersonalInfo = () => {
                         <option value="PR">Puerto Rico</option>
                     </select>
                 </div>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>Country</label>
                     <input type="text" name="country" value={formData.country} readOnly />
                 </div>
-                <div className="form-group">
+                <div className="personal-info-form-group">
                     <label>Zip Code</label>
                     <input type="text" name="zip_code" value={formData.zip_code} onChange={handleChange} />
                 </div>
-                <button type="submit" className="update-button">Update Information</button>
+                <button type="submit">Update Information</button>
             </form>
         </div>
     );

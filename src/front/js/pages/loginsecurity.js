@@ -44,7 +44,7 @@ const LoginSecurity = () => {
     <div className="login-security">
       <h2>Login & Security</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="login-form-group">
           <label>Current Password:</label>
           <div className="password-wrapper">
             <input
@@ -61,7 +61,7 @@ const LoginSecurity = () => {
             />
           </div>
         </div>
-        <div className="form-group">
+        <div className="login-form-group">
           <label>New Password:</label>
           <div className="password-wrapper">
             <input
@@ -78,7 +78,7 @@ const LoginSecurity = () => {
             />
           </div>
         </div>
-        <div className="form-group">
+        <div className="login-form-group">
           <label>Confirm New Password:</label>
           <div className="password-wrapper">
             <input

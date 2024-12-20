@@ -151,6 +151,7 @@
 //---------------------------------------
 import React, { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import "../../styles/paymentsPayouts.css";
 
 const PaymentForm = () => {
   const stripe = useStripe();
@@ -219,7 +220,7 @@ const PaymentForm = () => {
   };
 
   return (
-    <div className="card shadow-sm p-4 mb-5">
+    <div className="card shadow-sm p-4">
       <h3 className="text-center">Make a Payment</h3>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -238,14 +239,14 @@ const PaymentForm = () => {
 
         <div className="mb-3">
           <label className="form-label">Credit Card Details:</label>
-          <div className="form-control p-2">
+          <div className="form-control p-3">
             <CardElement />
           </div>
         </div>
 
         <button
           type="submit"
-          className="btn btn-primary w-100"
+          className="pay-button"
           disabled={paymentProcessing || !stripe}
         >
           {paymentProcessing ? "Processing..." : "Pay"}

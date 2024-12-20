@@ -1,0 +1,53 @@
+.payments-payouts-container {
+    width: 70vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    padding-top: 4vh;
+}
+
+.under-construction {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4vh;
+}
+
+.construction-img {
+    height: 200px;
+    width: auto;
+}
+
+.nav-link {
+    border: 1px solid blue !important;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.payout-container {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    align-items: center;
+    border: 1px solid lightgray;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    border-radius: 5px;
+}
+
+.payout-button, .pay-button {
+    background-color: #0D6EFD;
+    border-radius: 5px;
+    border: 1px solid #0D6EFD;
+}
+
+.payout-button:hover, .pay-button:hover {
+    background-color: white;
+    color: #0D6EFD;
+    border: 1px solid #0D6EFD;
+}
+
+.pay-button {
+    width: 100%;
+}

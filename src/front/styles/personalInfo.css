@@ -1,0 +1,71 @@
+.personal-info-container {
+    max-width: 70vw;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 80vh;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.personal-info-parent {
+    color: rgb(70,108,70);
+}
+
+.personal-info-parent:hover {
+    cursor: pointer;
+}
+
+.child-indicator {
+    padding: 0 8px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+.personal-info-form {
+    display: grid;
+    gap: 18px;
+}
+
+.personal-info-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info-form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.personal-info-form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 900px) {
+    .personal-info-container {
+        max-width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .personal-info-container {
+        max-width: 85vw;
+    }
+}
