@@ -297,10 +297,6 @@
   opacity: 1;
 }
 
-.apply-link:hover {
-  cursor: pointer;
-  color: blue;
-}
 
 .upload-job {
   border: 2px solid darkgrey;

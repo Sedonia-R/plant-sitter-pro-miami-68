@@ -42,7 +42,7 @@ import { ForgotPassword } from "./pages/ForgotPassword";
 import { ViewSitters } from "./pages/ViewSitters.js";
 import { Cancel } from "./pages/cancel";
 import { ProviderLandingPage } from "./pages/providerLandingPage";
-import { ClientLandingPage } from "./pages/clientLandingPage";
+import { ClientLandingPage } from "./pages/ClientLandingPage.js";
 import { ViewPlantSitterProfile } from "./pages/ViewPlantSitterProfile";
 import { PublishedJobPosts } from "./pages/publishedJobPost";
 import { JobsInProgress } from "./pages/jobsInProgress";

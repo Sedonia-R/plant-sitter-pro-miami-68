@@ -1,11 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom"
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import noImage from "../../img/noImage.png";
-import ScissorsLoader from "../component/ScissorsLoader";
+// import ScissorsLoader from "../component/ScissorsLoader";
 import "../../styles/index.css";
+import "../../styles/clientAndSitterLanding.css";
 
 export const ClientLandingPage = () => {
     const { store, actions } = useContext(Context);
@@ -43,9 +42,9 @@ export const ClientLandingPage = () => {
         fetchData();
     }, []);
 
-    if (loading) {
-        return <ScissorsLoader />;
-    }
+    // if (loading) {
+    //     return <ScissorsLoader />;
+    // }
 
     console.log(jobPosts);
 
@@ -59,36 +58,26 @@ export const ClientLandingPage = () => {
     };
 
     return (
-        <div className="container-fluid">
-            <div
-                className="row mt-4"
-                style={{ marginLeft: "30px" }}
-            >
-                <div className="profile-container row">
-                    <h1 className="diphylleia-regular"><strong>{firstName} {lastName}</strong></h1>
-                    {/* <h2 className="diphylleia-regular"><strong>{city}, {state}</strong></h2> */}
-                    <div className="col text-end">
-                        <h4 className="diphylleia-regular mb-0"><strong>Subscriber Since</strong></h4>
-                        <h4 className="diphylleia-regular mt-0">October 2024</h4>
-                    </div>
-                </div>
+        <div className="client-landing-container">
+            <h1 className="diphylleia-regular"><strong>{firstName} {lastName}</strong></h1>
+            <h4 className="diphylleia-regular"><strong>{city}, {state}</strong></h4>
+            <div className="text-end">
+                <h4 className="diphylleia-regular mb-0"><strong>Subscriber Since</strong></h4>
+                <h4 className="diphylleia-regular mt-0">October 2024</h4>
             </div>
-
+            <hr/>
             <div className="container mt-3">
-                <div className="container">
-                    <h1 
-                        className="diphylleia-regular mb-4 text-center apply-link"
-                        style={{textDecoration: "underline"}}
-                        onClick={() => navigate('/job-posts')}
-                    >
-                        <strong>View Current / Published Jobs</strong>
-                    </h1>
-                </div>
+                <h3 
+                    className="diphylleia-regular apply-link"
+                    onClick={() => navigate('/job-posts')}
+                >
+                    <strong>View Current / Published Jobs</strong>
+                </h3>
 
-                <h1 className="diphylleia-regular mb-5 text-center"><strong>Edit Your Open Job Posts</strong></h1 >
+                <h3 className="diphylleia-regular mb-5 text-center"><strong>Edit Your Open Job Posts</strong></h3 >
                 <div className="row">
                     {jobPosts.map((post) => (
-                        <div className="col-md-4 mb-4 job-cards" key={post.id} onClick={() => handleViewJobPost(post.id)}>
+                        <div className="job-cards" key={post.id} onClick={() => handleViewJobPost(post.id)}>
                             <div className="card" style={{ backgroundColor: "rgb(70, 108, 70)", borderRadius: "15px", minHeight: "100%" }}>
                                 <img
                                     src={post.profile_picture_url || noImage}
@@ -114,7 +103,7 @@ export const ClientLandingPage = () => {
                         className="upload-job"
                         onClick={() => {
                             actions.clearJobPostId();
-                            navigate("/client-services1")}
+                            navigate("/client-services")}
                         }
                         style={{ marginTop: "10%", marginLeft: "40px" }}
                     >
@@ -122,13 +111,13 @@ export const ClientLandingPage = () => {
                     </div>
                 </div>
                 <div className="container mt-3 mb-3">
-                    <h1 
+                    <h3 
                         className="diphylleia-regular mb-4 text-center apply-link"
                         style={{textDecoration: "underline"}}
                         onClick={() => navigate('/completed-jobs-page')}
                     >
                         <strong>View Completed Jobs</strong>
-                    </h1>
+                    </h3>
                 </div>
             </div>
         </div>

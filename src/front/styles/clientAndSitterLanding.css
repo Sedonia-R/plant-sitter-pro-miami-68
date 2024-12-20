@@ -1,0 +1,66 @@
+.client-landing-container{
+    min-height: 80vh;
+    padding: 3vh 4vw;
+}
+
+.profile-headers {
+    width: 100%;
+}
+
+.apply-link {
+    text-align: center;
+    color: green;
+    text-decoration: underline;
+    padding-top: 2vh;
+}
+
+.apply-link:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.upload-job {
+    border: 3px solid darkgrey;
+    border-radius: 15%;
+    width: 150px;
+    height: 150px;
+    opacity: 100;
+    transition: opacity 0.3s ease;
+    color: #ccc;
+    background-color: rgb(238, 238, 238);
+    margin: 0 !important;
+}
+
+.plus-sign {
+    position: relative;
+    top: 16%;
+    left: 16%;
+}
+  
+.upload-job:hover {
+    background-color: rgb(251, 251, 243);
+    color:rgb(70, 108, 70);
+    cursor: pointer;
+}
+
+.upload-job:active {
+    background-color: rgb(70, 108, 70);
+    color: rgb(251, 251, 243);
+}
+  
+.job-cards:hover {
+    background-color: rgb(251, 251, 243);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .upload-job {
+        width: 75px;
+        height: 75px;
+    }
+
+    .plus-sign {
+        left: 5%;
+        font-size: 3rem;
+    }
+}
