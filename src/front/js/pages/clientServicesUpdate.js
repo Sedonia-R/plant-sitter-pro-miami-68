@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from "react"; 
 import { Context } from "../store/appContext";
-import "../../styles/home.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import succulents from "../../img/succulents.jpg";
@@ -19,6 +18,7 @@ import pestControl from "../../img/pestControl.png";
 import border from "../../img/border.png";
 import { useNavigate, useParams } from "react-router-dom";
 import "../../styles/index.css";
+import "../../styles/clientServices.css";
 
 export const ClientServicesUpdate = () => {
     const { store, actions } = useContext(Context);
@@ -47,7 +47,7 @@ export const ClientServicesUpdate = () => {
         if (job_post_id) {
             fetchData();
         } else {
-            navigate('/client-services1');
+            navigate('/client-services');
         }
     }, []);
 
@@ -84,20 +84,20 @@ export const ClientServicesUpdate = () => {
 
 
     return (
-        <div className="text-center m-5">
+        <div className="client-services-container">
             <h1 className="diphylleia-regular">Welcome {store.user?.first_name}!</h1>
             <img className="divider" src={border} alt="divider" />
             <h3 className="diphylleia-regular mt-1"><strong>When do you need help?</strong></h3>
             <div className="d-flex row client-services">
                 <div className="col scheduler">
-                    <div className="m-auto bg-white rounded p-2 calendar">
+                    <div className="rounded calendar">
                         <p className="fs-4 m-0"><strong>Select dates</strong></p>
                         <div className="d-flex justify-content-center">
-                            <div className="m-2">
+                            <div className="start-end">
                                 <h5>Start Date</h5>
                                 <DatePicker className="text-center" selected={startDate} onChange={(date) => setStartDate(date)} />
                             </div>
-                            <div className="m-2">
+                            <div className="start-end">
                                 <h5>End Date</h5>
                                 <DatePicker className="text-center" selected={endDate} onChange={(date) => setEndDate(date)} />
                             </div>
@@ -105,9 +105,9 @@ export const ClientServicesUpdate = () => {
                     </div>
                 </div>
                 <p></p>
-                <img className="divider m-auto" src={border} alt="divider" />
+                <img className="divider" src={border} alt="divider" />
                 <h3 className="diphylleia-regular mt-4"><strong>What kind of plants do you have that need care?</strong></h3>
-                <div className="d-flex plant-types justify-content-center">
+                <div className="plants-and-services-background">
                     {[
                         { src: usual, label: "Standard House Plants" },
                         { src: succulents, label: "Succulents" },
@@ -120,17 +120,17 @@ export const ClientServicesUpdate = () => {
                     ].map((plant, index) => (
                         <div
                             key={index}
-                            className={`selectPlantsClient ${selectedPlants.includes(plant.label) ? "selected" : ""}`}
+                            className={`select-plants-client ${selectedPlants.includes(plant.label) ? "selected" : ""}`}
                             onClick={() => handlePlantSelection(plant.label)}
                         >
-                            <img className="plants img-fluid" src={plant.src} alt={plant.label} />
+                            <img className="plants-and-services img-fluid" src={plant.src} alt={plant.label} />
                             <p className={`plantLabel ${getTextColorClass(plant.label, selectedPlants)}`}><strong>{plant.label}</strong></p>
                         </div>
                     ))}
                 </div>
-                <img className="divider m-auto" src={border} alt="divider" />
+                <img className="divider" src={border} alt="divider" />
                 <h3 className="diphylleia-regular mt-4"><strong>What kind of services do you need?</strong></h3>
-                <div className="d-flex justify-content-center plant-types">
+                <div className="plants-and-services-background">
                     {[
                         { src: watering, label: "Watering" },
                         { src: cleaning, label: "Cleaning" },
@@ -140,18 +140,18 @@ export const ClientServicesUpdate = () => {
                     ].map((service, index) => (
                         <div
                             key={index}
-                            className={`selectServices ${selectedServices.includes(service.label) ? "selected" : ""}`}
+                            className={`select-services-client ${selectedServices.includes(service.label) ? "selected" : ""}`}
                             onClick={() => handleServiceSelection(service.label)}
                         >
-                            <img className="plants img-fluid" src={service.src} alt={service.label} />
+                            <img className="plants-and-services img-fluid" src={service.src} alt={service.label} />
                             <p className={`serviceLabel ${getTextColorClass(service.label, selectedServices)}`}><strong>{service.label}</strong></p>
                         </div>
                     ))}
                 </div>
-                <img className="divider m-auto" src={border} alt="divider" />
-                <div className="container row mt-1 mb-5">
+                <img className="divider" src={border} alt="divider" />
+                <div className="container mt-3">
                     <button
-                        className="btn btn-success m-auto col-2 rounded-pill"
+                        className="m-auto"
                         onClick={handleNext}
                     >
                         Next

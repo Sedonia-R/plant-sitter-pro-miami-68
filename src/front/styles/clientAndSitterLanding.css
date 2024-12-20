@@ -19,6 +19,10 @@
     color: blue;
 }
 
+.posts-row {
+    width: 100%;
+}
+
 .upload-job {
     border: 3px solid darkgrey;
     border-radius: 15%;
@@ -34,7 +38,7 @@
 .plus-sign {
     position: relative;
     top: 16%;
-    left: 16%;
+    left: 22%;
 }
   
 .upload-job:hover {
@@ -60,7 +64,7 @@
     }
 
     .plus-sign {
-        left: 5%;
+        left: 20%;
         font-size: 3rem;
     }
 }

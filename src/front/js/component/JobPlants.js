@@ -25,7 +25,9 @@ export const JobPlants = () => {
             if (!store.user) {
                 await actions.getUser();
             }
-            setLoading(false);
+            else {
+                setLoading(false);
+            }
         };
         fetchData();
     }, []);

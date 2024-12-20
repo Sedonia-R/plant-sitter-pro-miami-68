@@ -45,7 +45,6 @@ export const JobPostUpdate = () => {
             }
             setLoading(false);
         };
-
         fetchJobPost();
     }, []);
 
@@ -249,7 +248,6 @@ export const JobPostUpdate = () => {
             </div>
             <button
                 type="submit" 
-                className="btn mb-3 mt-3 col-2 rounded-pill"
                 onClick={handleSubmit}
             >
                 Update Job Post

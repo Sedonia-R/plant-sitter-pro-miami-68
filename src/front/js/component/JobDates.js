@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Context } from '../store/appContext';
-import ShovelAnimation from './ShovelAnimation';
+// import ShovelAnimation from './ShovelAnimation';
 
 export const JobDates = () => {
     const { store, actions } = useContext(Context);
@@ -14,14 +14,16 @@ export const JobDates = () => {
             if (!store.user) {
                 await actions.getUser();
             }
-            setLoading(false);
+            else {
+                setLoading(false);
+            }
         };
         fetchData();
     }, []);
 
-    if (loading) {
-        return <ShovelAnimation />;
-    }
+    // if (loading) {
+    //     return <ShovelAnimation />;
+    // }
 
     return (
         <div className="dates rounded">   

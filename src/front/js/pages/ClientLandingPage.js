@@ -46,7 +46,7 @@ export const ClientLandingPage = () => {
     //     return <ScissorsLoader />;
     // }
 
-    console.log(jobPosts);
+    // console.log(jobPosts);
 
     const handleViewJobPost = (jobPostId) => {
         navigate(`/job-post-preview/${jobPostId}`);
@@ -59,23 +59,21 @@ export const ClientLandingPage = () => {
 
     return (
         <div className="client-landing-container">
-            <h1 className="diphylleia-regular"><strong>{firstName} {lastName}</strong></h1>
-            <h4 className="diphylleia-regular"><strong>{city}, {state}</strong></h4>
-            <div className="text-end">
-                <h4 className="diphylleia-regular mb-0"><strong>Subscriber Since</strong></h4>
+            <h1 className="diphylleia-regular"><strong>{firstName} {lastName}</strong></h1>            <div className="text-end">
+                <h4 className="diphylleia-regular mb-1"><strong>{city}, {state}</strong></h4>
+                <h4 className="diphylleia-regular mb-0">Subscriber Since</h4>
                 <h4 className="diphylleia-regular mt-0">October 2024</h4>
             </div>
             <hr/>
-            <div className="container mt-3">
+            <div>
                 <h3 
                     className="diphylleia-regular apply-link"
                     onClick={() => navigate('/job-posts')}
                 >
                     <strong>View Current / Published Jobs</strong>
                 </h3>
-
                 <h3 className="diphylleia-regular mb-5 text-center"><strong>Edit Your Open Job Posts</strong></h3 >
-                <div className="row">
+                <div className="posts-row">
                     {jobPosts.map((post) => (
                         <div className="job-cards" key={post.id} onClick={() => handleViewJobPost(post.id)}>
                             <div className="card" style={{ backgroundColor: "rgb(70, 108, 70)", borderRadius: "15px", minHeight: "100%" }}>
@@ -105,15 +103,13 @@ export const ClientLandingPage = () => {
                             actions.clearJobPostId();
                             navigate("/client-services")}
                         }
-                        style={{ marginTop: "10%", marginLeft: "40px" }}
                     >
                         <i className="fa fa-plus fa-6x plus-sign"></i>
                     </div>
                 </div>
-                <div className="container mt-3 mb-3">
+                <div className="container mt-3">
                     <h3 
-                        className="diphylleia-regular mb-4 text-center apply-link"
-                        style={{textDecoration: "underline"}}
+                        className="diphylleia-regular apply-link"
                         onClick={() => navigate('/completed-jobs-page')}
                     >
                         <strong>View Completed Jobs</strong>
