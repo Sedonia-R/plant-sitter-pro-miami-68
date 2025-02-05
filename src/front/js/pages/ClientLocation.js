@@ -10,14 +10,14 @@ export const ClientLocation = () => {
     const [zipCode, setZipCode] = useState("");
 
     const handleSearch = async () => {
-        if (zipCode) {
+        if (zipCode && zipCode.length == 5) {
             const res = await actions.searchSitters(zipCode);
             if (res.success) {
                 navigate('/view-sitters');
             }
              else {
-                navigate('/view-sitters');
-                // alert("No sitters found near your location.");
+                // navigate('/view-sitters');
+                alert("No sitters found near your location.");
             }
         } else {
             alert("Please enter a valid ZIP code.");

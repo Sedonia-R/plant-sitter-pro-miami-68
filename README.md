@@ -110,15 +110,15 @@ And wipe the database:
 ```sh
 $ psql -h localhost -U gitpod example
 postgres=# \c postgres;
-postgres=# drop database example
-postgres=# create database example
+postgres=# drop database example;
+postgres=# create database example;
 postgres=# \q
 ```
 
 Then run new migration:
 
 ```sh
-$ pipenv run migration
+$ pipenv run migrate
 $ pipenv run upgrade
 ```
 

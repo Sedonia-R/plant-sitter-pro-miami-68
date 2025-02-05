@@ -1,6 +1,6 @@
 .navbar {
   border-bottom: 2px solid rgb(70, 108, 70);
-  height: 10vh;
+  height: 15vh;
 }
 
 .navbar-banner {
@@ -9,7 +9,7 @@
 }
 
 .logo {
-  max-height: 8vh;
+  max-height: 12vh;
   width: auto;
 }
 
@@ -19,13 +19,13 @@
 }
 
 #dropdownMenuButton {
-  font-size: 1.5vh;
+  font-size: 3vh;
   border-radius: 20px;
   font-weight: bold;
 }
 
 .dropdown-item, li {
-  font-size: 1.5vh;
+  font-size: 2.2vh;
 }
 
 li:hover {
